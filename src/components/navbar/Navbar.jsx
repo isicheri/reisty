@@ -1,11 +1,11 @@
 import React from "react";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logo.svg";
 import Flag from "../../assets/ngflag.png";
 import Arrow from "../../assets/dropdownarrow.svg";
 import Searchicon from "../../assets/searchicon.svg";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Sidebar = () => {
   return (
     <>
       <div className="navbar border-2 border-b-gray-200 flex items-center lg:gap-6 lg:w-[100%] lg:pl-[4rem] lg:pr[3rem] lg:h-[90px]">
@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
 
         <div>
-          <h1 className="text-[#BC172F] font-medium mr-4">For resturant</h1>
+          <h1 className="text-[#BC172F] font-medium mr-4">For restaurant</h1>
         </div>
 
         <div className="btns flex gap-4">
@@ -66,4 +66,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Sidebar;
