@@ -1,0 +1,12 @@
+.first{
+    background-image: url("../assets/bgT.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.second{
+    background-image: url("../assets/imgwaitlist.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

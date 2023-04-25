@@ -3,9 +3,14 @@ import Picthree from "../../assets/pic3.svg"
 import Pictwo from "../../assets/pic2.svg"
 import Picone from "../../assets/pic1.svg"
 import Cardprops from '../cardFavourite/Cardprops'
-import CardImg from "../../assets/cardimg1.png"
+import Imgbrown from "../../assets/imgbrown.svg"
+import Imgbrown2 from "../../assets/imgbrown2.svg"
+import Imgblue from "../../assets/imgblue.svg"
+import Imgreen from "../../assets/imggreenchairs.svg"
 import Arrow from "../../assets/seemorearrow.svg"
-import Card from '../cardFavourite/Card'
+// import CardImg from "../../assets/cardimg1.png"
+// import Card from '../cardFavourite/Card'
+import OwnersClaim from '../restaurantOwners/OwnersClaim'
 
 
 const DiscoverCards = () => {
@@ -46,10 +51,14 @@ const DiscoverCards = () => {
         </div>
 
         <div className="lg:grid lg:grid-cols-4 gap-5">
-        <Cardprops image={CardImg} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={CardImg} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={CardImg} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={CardImg} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
+        <Cardprops image={Imgbrown} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
+        <Cardprops image={Imgbrown} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
+        <Cardprops image={Imgbrown} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
+        <Cardprops image={Imgbrown} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
+        </div>
+
+        <div>
+            <OwnersClaim />
         </div>
 
         <div className='pb-6 flex items-center pr-6 mt-16'>
@@ -64,14 +73,14 @@ const DiscoverCards = () => {
         </div>
 
         <div className="lg:grid lg:grid-cols-4 gap-5">
-        <Cardprops image={CardImg} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={CardImg} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={CardImg} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={CardImg} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={CardImg} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={CardImg} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={CardImg} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={CardImg} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
+        <Cardprops image={Imgbrown} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
+        <Cardprops image={Imgblue} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
+        <Cardprops image={Imgreen} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
+        <Cardprops image={Imgbrown2} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
+        <Cardprops image={Imgbrown} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
+        <Cardprops image={Imgblue} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
+        <Cardprops image={Imgreen} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
+        <Cardprops image={Imgbrown2} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
         </div>
     </div>
   )
