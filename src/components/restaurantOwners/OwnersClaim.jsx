@@ -13,7 +13,7 @@ const OwnersClaim = () => {
         <div className="text w-[60%] bg-[#F2F2F2] text-black" >
             <h2>WAITLIST MANAGEMENT</h2>
             <h1>WAILIST MANAGEMENT WITH REISTY</h1>
-            <P>Maximize seating efficiency with Reisty's waitlist management tool. Estimate wait times, send SMS notifications, and increase revenue while improving customer satisfaction</P>
+            <p>Maximize seating efficiency with Reisty's waitlist management tool. Estimate wait times, send SMS notifications, and increase revenue while improving customer satisfaction</p>
             <button>Create a free account</button>
         </div>
         <div className="second w-[40%]"></div>
