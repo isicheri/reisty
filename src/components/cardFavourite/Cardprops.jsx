@@ -4,7 +4,7 @@ const Cardprops = (props) => {
   return (
     <>
     <div className="">
-      <div className="card bg-base-100 h-[315px] w-[95%] border-2 border-gray-200 hover:shadow-top">
+      <div className="card bg-base-100 h-[315px] w-[95%] border-2 border-gray-200 hover:border-l-[2px]  hover:border-l-gray-200 hover:border-[#BC172F] hover:border-r-[12px] hover:border-b-[12px] hover:border-0">
         <div className="h-[200px]">
           <img
             src={props.image}
