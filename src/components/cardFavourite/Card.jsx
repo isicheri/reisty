@@ -19,6 +19,7 @@ const Card = () => {
                 <img src={Arrow} alt="" srcset="" className='pt-2'/>
             </div>
         </div>
+
         <div className="lg:grid lg:grid-cols-4 gap-5">
         <Cardprops image={Imgbrown} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
         <Cardprops image={Imgblue} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>

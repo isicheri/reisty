@@ -10,11 +10,11 @@ const OwnersClaim = () => {
         <button className="p-1 rounded-xl bg-white text-black w-[130px] font-medium">See full list</button>
       </div>
       <div className="h-[463px] w-[100%] flex"> 
-        <div className="text w-[60%] bg-[#F2F2F2] text-black" >
-            <h2>WAITLIST MANAGEMENT</h2>
-            <h1>WAILIST MANAGEMENT WITH REISTY</h1>
-            <p>Maximize seating efficiency with Reisty's waitlist management tool. Estimate wait times, send SMS notifications, and increase revenue while improving customer satisfaction</p>
-            <button>Create a free account</button>
+        <div className="text w-[60%] bg-[#F2F2F2] text-black py-[45px] pl-[18px] pr-[8px]" >
+            <h2 className="text-[17px] font-bold">WAITLIST MANAGEMENT</h2>
+            <h1 className="text-[40px] font-bold leading-[43px] py-5  w-[300px]">WAILIST MANAGEMENT WITH REISTY</h1>
+            <p className="w-[325px] text-[17px] pb-4 leading-5 font-medium">Maximize seating efficiency with Reisty's waitlist management tool. Estimate wait times, send SMS notifications, and increase revenue while improving customer satisfaction</p>
+            <button className="py-4 px-6 rounded-xl bg-[#BC172F] text-white font-medium">Create a free account</button>
         </div>
         <div className="second w-[40%]"></div>
       </div>
