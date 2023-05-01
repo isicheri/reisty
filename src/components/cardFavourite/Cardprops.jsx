@@ -1,4 +1,6 @@
 import React from "react";
+import Rating from "@mui/material/Rating";
+import Stack from "@mui/material/Stack";
 
 const Cardprops = (props) => {
   return (
@@ -8,14 +10,14 @@ const Cardprops = (props) => {
           <div className="h-[200px]">
             <img src={props.image} alt="" />
           </div>
-          <div className="card-body px-4 pt-4">
+          <div className="card-body px-4 pt-2">
             <h2 className="card-title text-[20px] text-[#2B2B2B] font-medium">
               {props.name}
             </h2>
-            <p>{props.location}</p>
-            <div className="card-actions text-[16px] text-[#2B2B2B] font-normal">
-              <button className="btn">{props.ratings}</button>
-            </div>
+            <p className="pb-2">{props.location}</p>
+            <Stack spacing={0}>
+              <Rating name="size-small" defaultValue={2} size="small" sx={{color:'#BC172F'}}/>
+            </Stack>
           </div>
         </div>
       </div>

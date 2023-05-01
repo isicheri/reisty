@@ -65,7 +65,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className="footerbottom h-[80px] w-[100%] mt-16 border-white  border-t-2">
+        <div className="footerbottom h-[80px] w-[100%] mt-16 border-white  border-t-[1px]">
             <div className='flex justify-between pt-6 text-[14px]'>
                 <div><p>&copy; 2022 Reisty.  All rights reserved.</p></div>
                 <div className='flex gap-5'>

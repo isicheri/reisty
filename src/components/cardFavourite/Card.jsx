@@ -21,14 +21,14 @@ const Card = () => {
         </div>
 
         <div className="lg:grid lg:grid-cols-4 gap-5">
-        <Cardprops image={Imgbrown} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={Imgblue} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={Imgreen} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={Imgbrown2} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={Imgbrown} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={Imgblue} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={Imgreen} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
-        <Cardprops image={Imgbrown2} name="Terra Kulture" location="Lagos, Nigeria" ratings="star"/>
+        <Cardprops image={Imgbrown} name="Terra Kulture" location="Lagos, Nigeria"/>
+        <Cardprops image={Imgblue} name="Terra Kulture" location="Lagos, Nigeria"/>
+        <Cardprops image={Imgreen} name="Terra Kulture" location="Lagos, Nigeria"/>
+        <Cardprops image={Imgbrown2} name="Terra Kulture" location="Lagos, Nigeria"/>
+        <Cardprops image={Imgbrown} name="Terra Kulture" location="Lagos, Nigeria"/>
+        <Cardprops image={Imgblue} name="Terra Kulture" location="Lagos, Nigeria"/>
+        <Cardprops image={Imgreen} name="Terra Kulture" location="Lagos, Nigeria"/>
+        <Cardprops image={Imgbrown2} name="Terra Kulture" location="Lagos, Nigeria"/>
         </div>
     </div>
   )

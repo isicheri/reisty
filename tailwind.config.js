@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     extend: {
-      boxShadow: {
+      boxShadowlogin: {
         'blg': '0px 8px 10px 10px rgba(211,211,211);',
       },
       boxShadow: {
