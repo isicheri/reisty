@@ -5,7 +5,6 @@ import Imgbrown2 from "../../assets/imgbrown2.svg"
 import Imgblue from "../../assets/imgblue.svg"
 import Imgreen from "../../assets/imggreenchairs.svg"
 import Arrow from "../../assets/seemorearrow.svg"
-
 const Card = () => {
   return (
     <div className="px-16 w-[100%] mt-16">
@@ -35,3 +34,10 @@ const Card = () => {
 }
 
 export default Card
+
+
+
+
+
+
+

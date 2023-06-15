@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/reistynewlogo.svg";
 import Flag from "../../assets/ngflag.png";
 import Arrow from "../../assets/dropdownarrow.svg";
 import Searchicon from "../../assets/searchicon.svg";
@@ -43,7 +43,7 @@ const NavbarDuo = () => {
 
         <div className='flex gap-8 items-center mr-12'>
         <div>
-          <h1 className="text-[#BC172F] font-medium mr-4">For resturant</h1>
+          <h1 className="text-[#BC172F] font-medium mr-4">For restaurant</h1>
         </div>
 
         <div className="btns flex gap-4">

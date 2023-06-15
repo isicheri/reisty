@@ -1,5 +1,5 @@
 import React from "react";
-import LogoT from "../../assets/logoT.png";
+import LogoT from "../../assets/logoT.svg";
 // import Navbar from "../../components/navbar/Navbar";
 // import { NavLink, Link } from 'react-router-dom';
 import FacebookIcon from "../../assets/facebook.svg";

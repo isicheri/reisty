@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/reistynewlogo.svg";
 import Flag from "../../assets/ngflag.png";
 import Arrow from "../../assets/dropdownarrow.svg";
 import Searchicon from "../../assets/searchicon.svg";

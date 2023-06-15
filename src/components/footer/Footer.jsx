@@ -1,9 +1,13 @@
 import React from 'react'
-import Logo from "../../assets/footerlogo.svg"
+import Logo from "../../assets/reistynewlogo2.svg"
+import Facebook from "../../assets/facebookicon.svg"
+import Instagram from "../../assets/instagramicon.svg"
+import Discord from "../../assets/discordicon.svg"
+import Twitter from "../../assets/twittericon.svg"
 
 const Footer = () => {
   return (
-    <div className='mt-16 h-[80vh] w-[100%] bg-[#2B2B2B] gap-8 text-[#FFFFFF] px-16'>
+    <div className='h-[80vh] w-[100%] bg-[#2B2B2B] gap-8 text-[#FFFFFF] px-16'>
         <div className="footerTop flex gap-16 py-10 w-[100%]">
             <div className='h-[200px] w-[33%] grid grid-cols-1 gap-5'>
                 <div className="logo">
@@ -12,11 +16,16 @@ const Footer = () => {
                 <div className="paragraph">
                     <p>With its innovative use of technology, Reisty is revolutionizing the hospitality industry by providing cutting-edge solutions to some of the world's finest dining establishments.</p>
                 </div>
-                <div className="socials flex gap-7">
-                    <div className="facebook p-3 rounded-full" style={{border:"2px solid white"}}></div>
-                    <div className="instagram p-3 rounded-full" style={{border:"2px solid white"}}></div>
-                    <div className="discord p-3 rounded-full" style={{border:"2px solid white"}}></div>
-                    <div className="twitter p-3 rounded-full" style={{border:"2px solid white"}}></div>
+                <div className="socials flex gap-5 items-center">
+                    <div className="facebook ">
+                        <img src={Facebook} alt="" className='bg-[#838080] h-[30px] w-[30px] p-2 rounded-full'/>
+                    </div><div className="facebook">
+                        <img src={Instagram} alt="" className='bg-[#838080] h-[30px] w-[30px] p-2 rounded-full' />
+                    </div><div className="facebook">
+                        <img src={Discord} alt="" className='bg-[#838080] h-[30px] w-[30px] p-2 rounded-full'/>
+                    </div><div className="facebook">
+                        <img src={Twitter} alt="" className='bg-[#838080] h-[30px] w-[30px] p-2 rounded-full'/>
+                    </div>
                 </div>
             </div>
             <div className='w-[63%]'>

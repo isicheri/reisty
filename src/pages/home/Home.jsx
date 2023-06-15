@@ -4,6 +4,7 @@ import Hero from "../../components/hero/Hero";
 import Card from "../../components/cardFavourite/Card";
 import DiscoverCards from "../../components/dicoverfinestrestaurant/DiscoverCards";
 import Footer from "../../components/footer/Footer";
+import BeforeFooter from "../../components/beforefooter/BeforeFooter";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <Card />
       <DiscoverCards/>
+      <BeforeFooter />
       <Footer/>
     </div>
   );
