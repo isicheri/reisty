@@ -28,7 +28,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className=" w-[85%] mt-4 mb-6 mx-[29px] px-4 py-4 h-[48vh] bg-white border">
+        <div className=" w-[85%] mt-4 mb-6 mx-[29px] px-4 py-4 h-[51vh] bg-white border">
           <div>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DemoContainer components={["DatePicker"]}>

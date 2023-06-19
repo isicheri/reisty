@@ -66,11 +66,11 @@ const Sidebar = () => {
 
         <div className="flex items-center lg:hidden">
         <div>
-          <BiSearch className="text-[#BC172F] text-[45px] pr-[7px]"/>
+          <BiSearch className="text-[#BC172F] text-[40px] pr-[7px]"/>
         </div>
 
         <div>
-          <BiMenu className="text-[#BC172F] text-[50px]"/>
+          <BiMenu className="text-[#BC172F] text-[45px]"/>
         </div>
       </div>
         </div>
