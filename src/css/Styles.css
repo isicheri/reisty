@@ -10,3 +10,12 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+@media (width <= 640px) {
+    .first{
+    background-image: url("../assets/ownersclaimermobile.png");
+    background-size: cover;
+    background-position:0 10px;
+    background-repeat: no-repeat;
+    }
+}

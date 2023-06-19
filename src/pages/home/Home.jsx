@@ -12,9 +12,9 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Card />
-      {/* <DiscoverCards/> */}
-      {/* <BeforeFooter /> */}
-      {/* <Footer/> */}
+      <DiscoverCards/>
+      <BeforeFooter />
+      <Footer/>
     </div>
   );
 };
