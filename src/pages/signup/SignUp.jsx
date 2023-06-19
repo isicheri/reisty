@@ -49,46 +49,46 @@ const SignUp = () => {
               <div className="mb-4 w-[100%] justify-center">
                 <label
                   className="block py-3 text-gray-700 font-medium mb-2"
-                  htmlFor="username"
+                  htmlFor="firstname" 
                 >
                   First Name
                 </label>
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  id="username"
+                  id="firstname"
                   type="text"
-                  placeholder="Email address"
+                  placeholder="First Name"
                 />
 
                 <label
                   className="block py-3 text-gray-700 font-medium mb-2"
-                  htmlFor="username"
+                  htmlFor="lastname"
                 >
                   Last Name
                 </label>
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  id="username"
+                  id="Lastname"
                   type="text"
-                  placeholder="Email address"
+                  placeholder="Last Name"
                 />
 
                 <label
                   className="block py-3 text-gray-700 font-medium mb-2"
-                  htmlFor="username"
+                  htmlFor="email"
                 >
                   Email address
                 </label>
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  id="username"
+                  id="email"
                   type="text"
                   placeholder="Email address"
                 />
 
                 <label
                   className="block py-3 text-gray-700 font-medium mb-2"
-                  htmlFor="username"
+                  htmlFor="phonenumber"
                 >
                   Phone Number
                 </label>
@@ -96,37 +96,51 @@ const SignUp = () => {
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
                   id="username"
                   type="text"
-                  placeholder="Email address"
+                  placeholder="Phone Number"
                 />
 
                 <label
                   className="block py-3 text-gray-700 font-medium mb-2"
-                  htmlFor="username"
+                  htmlFor="country"
                 >
                   Country of Residence
                 </label>
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  id="username"
+                  id="country"
                   type="text"
-                  placeholder="Email address"
+                  placeholder="Country of resisdence"
                 />
 
                 <label
                   className="block py-3 text-gray-700 font-medium mb-2"
-                  htmlFor="username"
+                  htmlFor="password"
                 >
                   Password
                 </label>
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  id="username"
-                  type="text"
-                  placeholder="Email address"
+                  id="password"
+                  type="password"
+                  placeholder="Password"
                 />
               </div>
 
-              <div className="flex items-center justify-between">
+              <div>
+                <p className=" font-normal text-[14px] leading-5 text-[#808080]">
+                  By clicking the 'Create Account' button below, you agree to
+                  the Reisty{" "}
+                  <span className="text-[#BC172F] font-medium">
+                    Terms of Use
+                  </span>{" "}
+                  and{" "}
+                  <span className="text-[#BC172F] font-medium">
+                    Privacy Policy
+                  </span>.
+                </p>
+              </div>
+
+              <div className="flex items-center pt-8 justify-between">
                 <button
                   className="bg-red-700 text-white w-[100%] font-normal py-4 px-3 rounded-xl focus:outline-none focus:shadow-outline"
                   type="button"
@@ -135,9 +149,13 @@ const SignUp = () => {
                 </button>
               </div>
               <div className="pt-[19px]">
-                <span>already have an account?</span>
+                <span
+                  className="text-[#717171] text-[14px]"
+                >
+                  Already have an account?
+                </span>
                 <span className="text-red-700 font-medium text-[14px]">
-                Login
+                  Login
                 </span>
               </div>
             </form>

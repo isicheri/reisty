@@ -4,18 +4,20 @@ import Flag from "../../assets/ngflag.png";
 import Arrow from "../../assets/dropdownarrow.svg";
 import Searchicon from "../../assets/searchicon.svg";
 import { NavLink } from "react-router-dom";
+import { BiMenu } from "react-icons/bi";
+import { BiSearch } from "react-icons/bi";
 
 const Sidebar = () => {
   return (
     <>
-      <div className="navbar border-2 border-b-gray-200 flex items-center lg:gap-6 lg:w-[100%] lg:pl-[4rem] lg:pr[3rem] lg:h-[90px]">
+      <div className="flex justify-between px-[1.6rem] navbar h-[70px] lg:border-2 lg:border-b-gray-200 items-center lg:gap-6 w-[100%] lg:pl-[4rem] lg:pr[3rem] lg:h-[90px]">
         <div className="logo">
           <NavLink to="/">
           <img src={Logo} alt="" />
           </NavLink>
         </div>
 
-        <div className="navs lg:flex">
+        <div className="navs hidden lg:flex">
           <div className="country flex items-center gap-3 mr-10">
             <div className="flag">
               <img src={Flag} alt="" />
@@ -28,7 +30,7 @@ const Sidebar = () => {
             </div>
           </div>
 
-          <div className="search px-5 py-3 mr-20 gap-2 rounded-3xl flex ring-1 ring-gray-300">
+          <div className="search  px-5 py-3 mr-20 gap-2 rounded-3xl flex ring-1 ring-gray-300">
             <img src={Searchicon} alt="" />{" "}
             <span>
               <input
@@ -40,11 +42,11 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <div>
+        <div className="hidden lg:block">
           <h1 className="text-[#BC172F] font-medium mr-4">For restaurant</h1>
         </div>
 
-        <div className="btns flex gap-4">
+        <div className="btns hidden lg:flex gap-4">
           <div className="login">
             <NavLink to="/login">
               <button className="py-4 px-8 bg-white ring-1 ring-gray-300 rounded-xl font-semibold text-gray-900">
@@ -61,7 +63,17 @@ const Sidebar = () => {
             </NavLink>
           </div>
         </div>
+
+        <div className="flex items-center lg:hidden">
+        <div>
+          <BiSearch className="text-[#BC172F] text-[45px] pr-[7px]"/>
+        </div>
+
+        <div>
+          <BiMenu className="text-[#BC172F] text-[50px]"/>
+        </div>
       </div>
+        </div>
     </>
   );
 };

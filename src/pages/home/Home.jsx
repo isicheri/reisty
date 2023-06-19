@@ -11,10 +11,10 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
-      <Card />
-      <DiscoverCards/>
-      <BeforeFooter />
-      <Footer/>
+      {/* <Card /> */}
+      {/* <DiscoverCards/> */}
+      {/* <BeforeFooter /> */}
+      {/* <Footer/> */}
     </div>
   );
 };

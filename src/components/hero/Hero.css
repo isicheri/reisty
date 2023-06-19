@@ -4,3 +4,12 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+@media (width <= 640px) {
+    .hero{
+    background-image: url("../../assets/mobilebackground.png");
+    background-size: cover;
+    background-position:0 10px;
+    background-repeat: no-repeat;
+    }
+}
