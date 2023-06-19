@@ -6,11 +6,11 @@ const Cardprops = (props) => {
   return (
     <>
       <div className="">
-        <div className="card bg-base-100 h-[315px] w-[95%] border-2 border-gray-200 hover:shadow-lg  hover:shadow-[#BC172F]">
+        <div className="card bg-base-100 h-[340px] lg:h-[315px] w-[95%] border-2 border-gray-200 hover:shadow-lg  hover:shadow-[#BC172F]">
           <div className="h-[200px]">
             <img src={props.image} alt="" />
           </div>
-          <div className="card-body px-4 pt-2">
+          <div className="card-body px-4 pt-8 lg:pt-2">
             <h2 className="card-title text-[20px] text-[#2B2B2B] font-medium">
               {props.name}
             </h2>

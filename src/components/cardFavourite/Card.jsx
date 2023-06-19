@@ -7,19 +7,19 @@ import Imgreen from "../../assets/imggreenchairs.svg"
 import Arrow from "../../assets/seemorearrow.svg"
 const Card = () => {
   return (
-    <div className="px-16 w-[100%] mt-16">
-        <div className='pb-6 flex items-center pr-6'>
-            <div className='flex-1'>
-            <h1 className='text-[24px] font-medium'>Featured Restaurants</h1>
-            <p className='text-[16px] font-normal text-[#2B2B2B]'>Discover the best restaurants in your local area</p>
+    <div className="px-10 lg:px-16 w-[100%] mt-16 ">
+        <div className='lg:pb-6 lg:flex lg:items-center lg:pr-6'>
+            <div className='lg:flex-1'>
+            <h1 className='text-[20px] lg:text-[24px] font-medium'>Featured Restaurants</h1>
+            <p className='pb-4 text-[14px] lg:text-[16px] font-normal text-[#2B2B2B]'>Discover the best restaurants in your local area</p>
             </div>
-            <div className='flex gap-2 items-center'>
+            <div className=' mb-3 flex gap-2 items-center'>
                 <h1 className='text-[#BC172F] font-medium text-[20px]'>See more</h1>
-                <img src={Arrow} alt="" srcset="" className='pt-2'/>
+                <img src={Arrow} alt="" srcset="" className=' pt-2'/>
             </div>
         </div>
 
-        <div className="lg:grid lg:grid-cols-4 gap-5">
+        <div className="grid overflow-x-auto lg:grid-cols-4 gap-5 ">
         <Cardprops image={Imgbrown} name="Terra Kulture" location="Lagos, Nigeria"/>
         <Cardprops image={Imgblue} name="Terra Kulture" location="Lagos, Nigeria"/>
         <Cardprops image={Imgreen} name="Terra Kulture" location="Lagos, Nigeria"/>
