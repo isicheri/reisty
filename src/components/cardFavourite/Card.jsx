@@ -23,7 +23,8 @@ const Card = () => {
         </div>
       </div>
 
-      <div className="grid lg:grid lg:grid-cols-4 gap-5 ">
+      <div className=" flex flex-col gap-10">
+        <div className=" flex flex-row overflow-x-scroll lg:overflow-hidden h-[50vh] lg:h-[70vh] ">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
@@ -44,6 +45,8 @@ const Card = () => {
           name="Terra Kulture"
           location="Lagos, Nigeria"
         />
+        </div>
+        <div className="flex flex-row overflow-x-scroll lg:overflow-hidden h-[50vh] lg:h-[70vh]">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
@@ -64,6 +67,7 @@ const Card = () => {
           name="Terra Kulture"
           location="Lagos, Nigeria"
         />
+        </div>
       </div>
     </div>
   );

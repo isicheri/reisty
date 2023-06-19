@@ -8,7 +8,7 @@ import BeforeFooter from "../../components/beforefooter/BeforeFooter";
 
 const Home = () => {
   return (
-    <div>
+    <div className=" overflow-x-hidden">
       <Navbar />
       <Hero />
       <Card />

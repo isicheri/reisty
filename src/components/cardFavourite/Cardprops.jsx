@@ -5,7 +5,7 @@ import Stack from "@mui/material/Stack";
 const Cardprops = (props) => {
   return (
     <>
-      <div className="">
+      <div className=" min-w-max lg:min-w-fit">
         <div className="card bg-base-100 h-[340px] lg:h-[315px] w-[95%] border-2 border-gray-200 hover:shadow-lg  hover:shadow-[#BC172F]">
           <div className="h-[200px]">
             <img src={props.image} alt="" />
