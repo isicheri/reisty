@@ -15,7 +15,7 @@ const Card = () => {
             </div>
             <div className=' mb-3 flex gap-2 items-center'>
                 <h1 className='text-[#BC172F] font-medium text-[20px]'>See more</h1>
-                <img src={Arrow} alt="" srcset="" className=' pt-[6.7px]'/>
+                <img src={Arrow} alt="" srcset="" className=' pt-[6.3px]'/>
             </div>
         </div>
 
