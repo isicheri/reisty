@@ -7,7 +7,7 @@ import Imgreen from "../../assets/imggreenchairs.svg";
 import Arrow from "../../assets/seemorearrow.svg";
 const Card = () => {
   return (
-    <div className="px-10 lg:px-16 w-[100%] mt-16 ">
+    <div className="px-5 lg:px-16 w-[100%] mt-16 ">
       <div className="lg:pb-6 lg:flex lg:items-center lg:pr-6">
         <div className="lg:flex-1">
           <h1 className="text-[20px] lg:text-[24px] font-medium">
