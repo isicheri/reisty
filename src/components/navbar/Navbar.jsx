@@ -10,7 +10,7 @@ import { BiSearch } from "react-icons/bi";
 const Sidebar = () => {
   return (
     <>
-      <div className="flex justify-between px-[1.6rem] navbar h-[70px] lg:border-2 lg:border-b-gray-200 items-center lg:gap-6 w-[100%] lg:pl-[4rem] lg:pr[3rem] lg:h-[90px]">
+      <div className="flex justify-between px-[1.6rem] navbar h-[55px] lg:border-2 lg:border-b-gray-200 items-center lg:gap-6 w-[100%] lg:pl-[4rem] lg:pr[3rem] lg:h-[90px]">
         <div className="logo">
           <NavLink to="/">
           <img src={Logo} alt="" />
