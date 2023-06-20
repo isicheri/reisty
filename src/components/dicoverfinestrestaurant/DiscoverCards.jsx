@@ -11,16 +11,17 @@ import Arrow from "../../assets/seemorearrow.svg";
 // import CardImg from "../../assets/cardimg1.png"
 // import Card from '../cardFavourite/Card'
 import OwnersClaim from "../restaurantOwners/OwnersClaim";
+import Discovercardsprops from "./Discovercardsprops";
 
 const DiscoverCards = () => {
   return (
-    <div className="mt-[127px] px-16">
+    <div className=" px-5 lg:px-16">
       <div>
-        <p className="text-[24px] font-medium text-[#000000] pb-[30px]">
+        <p className=" text-[24px] font-medium text-[#000000] pb-[30px]">
           Discover our finest restaurants
         </p>
       </div>
-      <div className="cardpics  justify-between lg:grid lg:grid-cols-4  lg:gap-5">
+      {/* <div className="cardpics min-w-max gap-5 w-[95%] flex flex-row overflow-x-scroll lg:overflow-hidden lg:justify-between lg:grid lg:grid-cols-4 lg:gap-5">
         <div className="pic3">
           <img src={Pictwo} alt="" />
           <h1 className="pt-[20px] text-[18px] font-medium text-[#2B2B2B]">
@@ -45,11 +46,22 @@ const DiscoverCards = () => {
             Cafes
           </h1>
         </div>
-      </div>
+      </div> */}
+<div>
+<div className=" flex lg:h-[60vh] overflow-x-scroll lg:overflow-hidden lg:grid grid-cols-4 gap-5">
+  <Discovercardsprops image={Pictwo} text="Fine Dining"/>
+  <Discovercardsprops image={Picthree} text="Buffet"/>
+  <Discovercardsprops image={Picone} text="Family"/>
+  <Discovercardsprops image={Pictwo} text="Cafes"/>
+</div>
+</div>
+
 
       <div className=" lg:pb-6 lg:flex lg:items-center lg:pr-6 lg:mt-16">
         <div className="lg:flex-1">
-          <h1 className="text-[20px] lg:text-[24px] font-medium">Popular places</h1>
+          <h1 className="text-[20px] lg:text-[24px] font-medium">
+            Popular places
+          </h1>
           <p className=" pb-4 text-[14px] lg:text-[16px] font-normal text-[#2B2B2B]">
             Discover the best restaurants in your local area
           </p>
@@ -60,7 +72,7 @@ const DiscoverCards = () => {
         </div>
       </div>
 
-      <div className="grid lg:grid lg:grid-cols-4 gap-5">
+      <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden  lg:grid lg:grid-cols-4 gap-5">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
@@ -91,7 +103,7 @@ const DiscoverCards = () => {
         <OwnersClaim />
       </div>
 
-      {/* <div className="pb-6 flex items-center pr-6 mt-16">
+      <div className="pb-6 flex items-center pr-6 mt-16">
         <div className="flex-1">
           <h1 className="text-[24px] font-medium">
             Best restaurants in Africa
@@ -106,7 +118,8 @@ const DiscoverCards = () => {
         </div>
       </div>
 
-      <div className="grid lg:grid lg:grid-cols-4 gap-5">
+      <div className="flex flex-col gap-5">
+        <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden lg:grid grid-cols-4 gap-5">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
@@ -131,6 +144,9 @@ const DiscoverCards = () => {
           location="Lagos, Nigeria"
           ratings="star"
         />
+        </div>
+
+        <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden  lg:grid grid-cols-4 gap-5">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
@@ -155,7 +171,8 @@ const DiscoverCards = () => {
           location="Lagos, Nigeria"
           ratings="star"
         />
-      </div> */}
+        </div>
+      </div>
     </div>
   );
 };

@@ -7,7 +7,7 @@ import Imgreen from "../../assets/imggreenchairs.svg";
 import Arrow from "../../assets/seemorearrow.svg";
 const Card = () => {
   return (
-    <div className="px-5 lg:px-16 w-[100%] mt-16 ">
+    <div className="px-5 lg:px-16  mt-16 ">
       <div className="lg:pb-6 lg:flex lg:items-center lg:pr-6">
         <div className="lg:flex-1">
           <h1 className="text-[20px] lg:text-[24px] font-medium">
@@ -24,7 +24,7 @@ const Card = () => {
       </div>
 
       <div className=" flex flex-col gap-10">
-        <div className=" flex flex-row overflow-x-scroll lg:overflow-hidden h-[50vh] lg:h-[70vh] ">
+        <div className=" flex flex-row overflow-x-scroll lg:grid lg:grid-cols-4 lg:overflow-hidden h-[50vh] lg:h-[70vh]">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
@@ -46,7 +46,7 @@ const Card = () => {
           location="Lagos, Nigeria"
         />
         </div>
-        <div className="flex flex-row overflow-x-scroll lg:overflow-hidden h-[50vh] lg:h-[70vh]">
+        <div className="flex flex-row overflow-x-scroll lg:grid lg:grid-cols-4 lg:overflow-hidden h-[50vh] lg:h-[70vh]">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
