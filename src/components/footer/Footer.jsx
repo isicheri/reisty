@@ -7,8 +7,8 @@ import Twitter from "../../assets/twittericon.svg"
 
 const Footer = () => {
   return (
-    <div className='h-[80vh] w-[100%] bg-[#2B2B2B] gap-8 text-[#FFFFFF] px-16'>
-        <div className="footerTop flex gap-16 py-10 w-[100%]">
+    <div className='footerlg h-[80vh] w-[100%] bg-[#2B2B2B] gap-8 text-[#FFFFFF] px-16'>
+        <div className="footerTop grid grid-cols-2 lg:flex gap-16 py-10 w-[100%]">
             <div className='h-[200px] w-[33%] grid grid-cols-1 gap-5'>
                 <div className="logo">
                     <img src={Logo} alt="" />
@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className="paragraph">
                     <p>With its innovative use of technology, Reisty is revolutionizing the hospitality industry by providing cutting-edge solutions to some of the world's finest dining establishments.</p>
                 </div>
-                <div className="socials flex gap-5 items-center">
+                <div className="socials grid grid-cols-2 lg:flex gap-5 items-center">
                     <div className="facebook ">
                         <img src={Facebook} alt="" className='bg-[#838080] h-[30px] w-[30px] p-2 rounded-full'/>
                     </div><div className="facebook">
@@ -29,7 +29,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='w-[63%]'>
-                <div className='w-[100%] grid grid-cols-4 gap-5'>
+                <div className='w-[100%] grid grid-cols-2 lg:grid-cols-4 gap-5'>
                     <div className="">
                         <ul className='grid gap-3'>
                             <li className='text-[20px] font-medium'>Discover</li>
@@ -75,7 +75,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="footerbottom h-[80px] w-[100%] mt-16 border-white  border-t-[1px]">
-            <div className='flex justify-between pt-6 text-[14px]'>
+            <div className='grid lg:flex justify-between pt-6 text-[14px]'>
                 <div><p>&copy; 2022 Reisty.  All rights reserved.</p></div>
                 <div className='flex gap-5'>
                     <p>Global Privacy Policy</p>

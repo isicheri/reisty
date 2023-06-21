@@ -48,7 +48,7 @@ const DiscoverCards = () => {
         </div>
       </div> */}
 <div>
-<div className=" flex lg:h-[60vh] overflow-x-scroll lg:overflow-hidden lg:grid grid-cols-4 gap-5">
+<div className=" flex lg:h-[60vh] overflow-x-scroll lg:overflow-hidden lg:grid grid-cols-4 ">
   <Discovercardsprops image={Pictwo} text="Fine Dining"/>
   <Discovercardsprops image={Picthree} text="Buffet"/>
   <Discovercardsprops image={Picone} text="Family"/>
@@ -58,7 +58,7 @@ const DiscoverCards = () => {
 
 
       <div className=" lg:pb-6 lg:flex lg:items-center lg:pr-6 lg:mt-16">
-        <div className="lg:flex-1">
+        <div className="lg:flex-1 w-[100%] mt-16">
           <h1 className="text-[20px] lg:text-[24px] font-medium">
             Popular places
           </h1>
@@ -72,7 +72,7 @@ const DiscoverCards = () => {
         </div>
       </div>
 
-      <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden  lg:grid lg:grid-cols-4 gap-5">
+      <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden  lg:grid lg:grid-cols-4">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
@@ -103,23 +103,23 @@ const DiscoverCards = () => {
         <OwnersClaim />
       </div>
 
-      <div className="pb-6 flex items-center pr-6 mt-16">
-        <div className="flex-1">
+      <div className=" pb-1 lg:pb-6 grid grid-cols-1 lg:flex items-center pr-6 mt-16">
+        <div className="flex-1 w-[100%]">
           <h1 className="text-[24px] font-medium">
             Best restaurants in Africa
           </h1>
-          <p className="text-[16px] font-normal text-[#2B2B2B]">
+          <p className="text-[13px] pb-[20px] lg:text-[16px] font-normal text-[#2B2B2B]">
             We have all the best restaurants in all of Africa for you
           </p>
         </div>
         <div className="flex gap-2 items-center">
-          <h1 className="text-[#BC172F] font-medium text-[20px]">See more</h1>
+          <h1 className="text-[#BC172F] font-medium text-[20px] pb-0">See more</h1>
           <img src={Arrow} alt="" className="pt-2" />
         </div>
       </div>
 
       <div className="flex flex-col gap-5">
-        <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden lg:grid grid-cols-4 gap-5">
+        <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden lg:grid grid-cols-4">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
@@ -146,7 +146,7 @@ const DiscoverCards = () => {
         />
         </div>
 
-        <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden  lg:grid grid-cols-4 gap-5">
+        <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden  lg:grid grid-cols-4 ">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
