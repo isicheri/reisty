@@ -24,45 +24,53 @@ const Card = () => {
       </div>
 
       <div className=" flex flex-col gap-10">
-        <div className=" flex flex-row overflow-x-scroll lg:grid lg:grid-cols-4 lg:overflow-hidden h-[50vh] lg:h-[70vh]">
+        <div className=" flex flex-row overflow-x-scroll lg:grid lg:grid-cols-4 lg:overflow-hidden h-[50vh] gap-5 lg:h-[70vh]">
         <Cardprops
           image={Imgbrown}
+          id="1"          
           name="Terra Kulture"
           location="Lagos, Nigeria"
         />
         <Cardprops
+          id="2"
           image={Imgblue}
           name="Terra Kulture"
           location="Lagos, Nigeria"
         />
         <Cardprops
+          id="3"
           image={Imgreen}
           name="Terra Kulture"
           location="Lagos, Nigeria"
         />
         <Cardprops
+          id="4" 
           image={Imgbrown2}
           name="Terra Kulture"
           location="Lagos, Nigeria"
         />
         </div>
-        <div className="flex flex-row overflow-x-scroll lg:grid lg:grid-cols-4 lg:overflow-hidden h-[50vh] lg:h-[70vh]">
+        <div className="flex flex-row overflow-x-scroll lg:grid lg:grid-cols-4 lg:overflow-hidden h-[50vh] lg:h-[70vh] gap-5">
         <Cardprops
+          id="1" 
           image={Imgbrown}
           name="Terra Kulture"
           location="Lagos, Nigeria"
         />
         <Cardprops
+          id="2" 
           image={Imgblue}
           name="Terra Kulture"
           location="Lagos, Nigeria"
         />
         <Cardprops
+          id="3" 
           image={Imgreen}
           name="Terra Kulture"
           location="Lagos, Nigeria"
         />
         <Cardprops
+          id="4" 
           image={Imgbrown2}
           name="Terra Kulture"
           location="Lagos, Nigeria"

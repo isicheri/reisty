@@ -72,30 +72,34 @@ const DiscoverCards = () => {
         </div>
       </div>
 
-      <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden  lg:grid lg:grid-cols-4">
+      <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden gap-5 lg:grid lg:grid-cols-4">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
           location="Lagos, Nigeria"
           ratings="star"
+          id ="popular"
         />
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
           location="Lagos, Nigeria"
           ratings="star"
+          id ="popular"
         />
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
           location="Lagos, Nigeria"
           ratings="star"
+          id ="popular"
         />
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
           location="Lagos, Nigeria"
           ratings="star"
+          id ="popular"
         />
       </div>
 
@@ -119,57 +123,65 @@ const DiscoverCards = () => {
       </div>
 
       <div className="flex flex-col gap-5">
-        <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden lg:grid grid-cols-4">
+        <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden gap-5 lg:grid grid-cols-4">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
           location="Lagos, Nigeria"
           ratings="star"
+          id ="1"
         />
         <Cardprops
           image={Imgblue}
           name="Terra Kulture"
           location="Lagos, Nigeria"
           ratings="star"
+          id ="2"
         />
         <Cardprops
           image={Imgreen}
           name="Terra Kulture"
           location="Lagos, Nigeria"
           ratings="star"
+          id ="3"
         />
         <Cardprops
           image={Imgbrown2}
           name="Terra Kulture"
           location="Lagos, Nigeria"
           ratings="star"
+          id ="4"
         />
         </div>
 
-        <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden  lg:grid grid-cols-4 ">
+        <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden gap-5 lg:grid grid-cols-4 ">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
           location="Lagos, Nigeria"
           ratings="star"
+          id ="3"
         />
         <Cardprops
           image={Imgblue}
           name="Terra Kulture"
           location="Lagos, Nigeria"
           ratings="star"
+          id ="2"
         />
         <Cardprops
           image={Imgreen}
           name="Terra Kulture"
           location="Lagos, Nigeria"
           ratings="star"
+          id ="4"
         />
         <Cardprops
           image={Imgbrown2}
           name="Terra Kulture"
           location="Lagos, Nigeria"
           ratings="star"
+          id ="1"
         />
         </div>
       </div>

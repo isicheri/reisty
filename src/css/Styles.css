@@ -19,3 +19,29 @@
     background-repeat: no-repeat;
     }
 }
+
+.arrows{
+top: 50%;
+transform: translate(0%, -50%);
+opacity: 0;
+transition: all ease-out .3s;
+transition-delay: .2s;
+}
+
+.picPlace:hover .arrows{
+    opacity: 1;
+}
+
+.picPlace {
+    transition: all ease-out .4s;
+}
+
+.arrows .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'poppins', 'sans-serif';
+    cursor: pointer;
+}
