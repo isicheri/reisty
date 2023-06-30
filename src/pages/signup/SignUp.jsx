@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavbarDuo from "../../components/navbar/NavbarDuo";
 import FacebookIcon from "../../assets/facebook.svg";
 import GoogleIcon from "../../assets/google.svg";
@@ -9,6 +9,25 @@ import LogoT from "../../assets/logoT.svg";
 // https://ekwonye-richard.github.io/react-flags-select/?path=/story/reactflagsselect--primary
 
 const SignUp = () => {
+  // const [firstName, setFirstName] = useState("")
+  // const [lastName, setLastName] = useState("")
+  // const [phoneNo, setPhoneNoName] = useState("")
+  // const [country, setCountry] = useState("")
+  // const [email, setEmail] = useState("")
+  // const [password, setPassword] = useState("")
+
+  const [formDataSignUp, setFormDataSignUp] = useState({
+    // firstName: "",
+    // lastName: "",
+    // email: "",
+    // phoneNo: "",
+    // country: "",
+    // password: "",
+  });
+
+  const handleChangeSignUp = (e) => {
+    // setFormDataSignUp({ ...formDataSignUp, [e.target.name]: e.target.value });
+  };
   return (
     <div>
       <NavbarDuo />
@@ -49,15 +68,18 @@ const SignUp = () => {
               <div className="mb-4 w-[100%] justify-center">
                 <label
                   className="block py-3 text-gray-700 font-medium mb-2"
-                  htmlFor="firstname" 
+                  htmlFor="firstname"
                 >
                   First Name
                 </label>
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  id="firstname"
+                  // id="firstname"
+                  name="firstName"
                   type="text"
                   placeholder="First Name"
+                  value={formDataSignUp.firstName}
+                  onChange={handleChangeSignUp}
                 />
 
                 <label
@@ -68,7 +90,9 @@ const SignUp = () => {
                 </label>
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  id="Lastname"
+                  name="lastName"
+                  value={formDataSignUp.lastName}
+                  onChange={handleChangeSignUp}
                   type="text"
                   placeholder="Last Name"
                 />
@@ -81,7 +105,10 @@ const SignUp = () => {
                 </label>
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  id="email"
+                  // id="email"
+                  name="email"
+                  value={formDataSignUp.email}
+                  onChange={handleChangeSignUp}
                   type="text"
                   placeholder="Email address"
                 />
@@ -94,7 +121,10 @@ const SignUp = () => {
                 </label>
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  id="username"
+                  // id="username"
+                  name="phoneNo"
+                  value={formDataSignUp.phoneNo}
+                  onChange={handleChangeSignUp}
                   type="text"
                   placeholder="Phone Number"
                 />
@@ -107,7 +137,10 @@ const SignUp = () => {
                 </label>
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  id="country"
+                  // id="country"
+                  name="country"
+                  value={formDataSignUp.country}
+                  onChange={handleChangeSignUp}
                   type="text"
                   placeholder="Country of resisdence"
                 />
@@ -120,10 +153,28 @@ const SignUp = () => {
                 </label>
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  id="password"
+                  // id="password"
+                  name="password"
+                  value={formDataSignUp.password}
+                  onChange={handleChangeSignUp}
                   type="password"
                   placeholder="Password"
                 />
+
+<label
+                  className="block py-3 text-gray-700 font-medium mb-2"
+                  htmlFor="password"
+                >
+                Confirm Password
+                </label>
+                <input
+                  className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
+                  // id="password"
+                  name="Confirm Password"
+                  value={formDataSignUp.password}
+                  onChange={handleChangeSignUp}
+                  type="password"
+                  placeholder/>
               </div>
 
               <div>
@@ -136,7 +187,8 @@ const SignUp = () => {
                   and{" "}
                   <span className="text-[#BC172F] font-medium">
                     Privacy Policy
-                  </span>.
+                  </span>
+                  .
                 </p>
               </div>
 
@@ -149,9 +201,7 @@ const SignUp = () => {
                 </button>
               </div>
               <div className="pt-[19px]">
-                <span
-                  className="text-[#717171] text-[14px]"
-                >
+                <span className="text-[#717171] text-[14px]">
                   Already have an account?
                 </span>
                 <span className="text-red-700 font-medium text-[14px]">

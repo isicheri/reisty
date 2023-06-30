@@ -6,6 +6,7 @@ import Imgbrown2 from "../../assets/imgbrown2.svg";
 import Imgblue from "../../assets/imgblue.svg";
 import Imgreen from "../../assets/imggreenchairs.svg";
 import { HiHeart } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Cardprops = (props) => {
   let allBgs = [Imgblue, Imgbrown, Imgbrown2, Imgreen];
@@ -27,7 +28,8 @@ const Cardprops = (props) => {
   const [curSlide, setSlide] = React.useState(0);
   return (
     <>
-      <div className=" min-w-max lg:min-w-fit">
+      <div className=" min-w-max lg:min-w-fit" style={{backgroundColor: "", marginRight: "1rem"}}>
+        <Link to= "/">
         <div className="card relative bg-base-100 h-[340px] lg:h-[315px] border-2 border-gray-200 hover:shadow-lg  hover:shadow-[#BC172F]">
           <div
             style={{ backgroundImage: "url(" + allBgs[curSlide] + ")" }}
@@ -69,7 +71,7 @@ const Cardprops = (props) => {
                 &rarr;
               </div>
             </div>
-            {/* <img src={props.image} alt="" /> */}
+          
           </div>
           <div className="card-body px-4 pt-8 lg:pt-2">
             <h2 className="card-title text-[20px] text-[#2B2B2B] font-medium">
@@ -86,6 +88,7 @@ const Cardprops = (props) => {
             </Stack>
           </div>
         </div>
+        </Link>
       </div>
     </>
   );

@@ -4,6 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import SignUp from "./pages/signup/SignUp";
+// import SeeMore from "./components/restaurantsinLocation/RestaurantsinLocation";
+import RestaurantsinLocation from "./components/restaurantsinLocation/RestaurantsinLocation";
+import RestaurantProfile from "./pages/restaurantProfile/RestaurantProfile";
 // import Blog from "./pages/aboutUs/Blog";
 // import Career from "./pages/aboutUs/Career";
 // import OurTeam from "./pages/aboutUs/OurTeam";
@@ -21,6 +24,8 @@ const App = () => {
             <Route index element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/restaurantsinLocation" element={<RestaurantsinLocation />} />
+            <Route path="/restaurantProfile" element={<RestaurantProfile />} />
             {/* <Route path="/about-us" element={<AboutUs />} />
             <Route path="/support" element={<Support />} />
             <Route path="/aboutUs" element={<OurTeam />} />

@@ -44,8 +44,8 @@ const BeforeFooter = () => {
           </div> */}
         </div>
 
-        <div className="image w-[50%]">
-          <img src={BeforeFooterImage} alt="" />
+        <div className="image w-[50%] mx-auto pt-4">
+          <img src={BeforeFooterImage} alt=""/>
         </div>
       </div>
     </>

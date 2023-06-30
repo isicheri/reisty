@@ -8,6 +8,7 @@ import Imgbrown2 from "../../assets/imgbrown2.svg";
 import Imgblue from "../../assets/imgblue.svg";
 import Imgreen from "../../assets/imggreenchairs.svg";
 import Arrow from "../../assets/seemorearrow.svg";
+import { NavLink, Link } from "react-router-dom";
 // import CardImg from "../../assets/cardimg1.png"
 // import Card from '../cardFavourite/Card'
 import OwnersClaim from "../restaurantOwners/OwnersClaim";
@@ -66,10 +67,12 @@ const DiscoverCards = () => {
             Discover the best restaurants in your local area
           </p>
         </div>
+        <Link to = "/">
         <div className="flex gap-2 items-center">
           <h1 className="text-[#BC172F] font-medium text-[20px]">See more</h1>
           <img src={Arrow} alt="" className="pt-2" />
         </div>
+        </Link>
       </div>
 
       <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden gap-5 lg:grid lg:grid-cols-4">
@@ -116,10 +119,12 @@ const DiscoverCards = () => {
             We have all the best restaurants in all of Africa for you
           </p>
         </div>
+        <Link to = "/">
         <div className="flex gap-2 items-center">
           <h1 className="text-[#BC172F] font-medium text-[20px] pb-0">See more</h1>
           <img src={Arrow} alt="" className="pt-2" />
         </div>
+        </Link>
       </div>
 
       <div className="flex flex-col gap-5">

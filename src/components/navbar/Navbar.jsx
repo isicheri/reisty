@@ -2,10 +2,11 @@ import React from "react";
 import Logo from "../../assets/reistynewlogo.svg";
 import Flag from "../../assets/ngflag.png";
 import Arrow from "../../assets/dropdownarrow.svg";
-import Searchicon from "../../assets/searchicon.svg";
-import { NavLink } from "react-router-dom";
+// import Searchicon from "../../assets/searchicon.svg";
+import { NavLink, Link } from "react-router-dom";
 import { BiMenu } from "react-icons/bi";
 import { BiSearch } from "react-icons/bi";
+import "../navbar/Navbar.css";
 
 const Sidebar = () => {
   return (
@@ -13,7 +14,7 @@ const Sidebar = () => {
       <div className="flex justify-between px-[1.6rem] navbar h-[70px] lg:border-2 lg:border-b-gray-200 items-center lg:gap-6 w-[100%] lg:pl-[4rem] lg:pr[3rem] lg:h-[90px]">
         <div className="logo">
           <NavLink to="/">
-          <img src={Logo} alt="" />
+            <img src={Logo} alt="" />
           </NavLink>
         </div>
 
@@ -30,15 +31,32 @@ const Sidebar = () => {
             </div>
           </div>
 
-          <div className="search  px-5 py-3 mr-20 gap-2 rounded-3xl flex ring-1 ring-gray-300">
-            <img src={Searchicon} alt="" />{" "}
-            <span>
-              <input
-                type="text"
-                placeholder="Search restaurants, cuisines or experience"
-                className="w-[300px] outline-none text-[16px]"
-              />
-            </span>
+          <div class="search-box">
+            <BiSearch size="20" color="light-gray"/>
+            <input
+              type="text"
+              placeholder="Search Restaurants, cuisines or experience"
+            />
+
+            <div class="dropBox">
+              <div class="title">
+                <Link to = "/restaurantsinLocation">All Restaurants in Lagos</Link>
+              </div>
+              <div class="top">Top Searches</div>
+              <div class="allSearches">
+                <div class="search">Bar</div>
+                <div class="search">BBQ</div>
+                <div class="search">Chicken</div>
+                <div class="search">Coctails</div>
+                <div class="search">Burgers</div>
+                <div class="search">Dessert</div>
+                <div class="search">Pizza</div>
+                <div class="search">Patio</div>
+                <div class="search">Salad</div>
+                <div class="search">Swallow</div>
+                <div class="search">Wine</div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -65,15 +83,15 @@ const Sidebar = () => {
         </div>
 
         <div className="flex items-center lg:hidden">
-        <div>
-          <BiSearch className="text-[#BC172F] text-[36px] pr-[7px]"/>
-        </div>
+          <div>
+            <BiSearch className="text-[#BC172F] text-[36px] pr-[7px]" />
+          </div>
 
-        <div>
-          <BiMenu className="text-[#BC172F] text-[45px]"/>
+          <div>
+            <BiMenu className="text-[#BC172F] text-[45px]" />
+          </div>
         </div>
       </div>
-        </div>
     </>
   );
 };
