@@ -28,11 +28,11 @@ const Hero = () => {
 
   return (
     <>
-      <div className="hero pt-[60px] h-max w-[100%] pb-24 text-center lg:pt-28">
+      <div className="hero pt-[60px] h-max w-[100%] pb-10 text-center lg:pt-28 lg:pb-28">
         <div className="text-[30px] leading-[40px] px-7 mx-auto text-center font-bold text-white lg:text-[45px] lg:leading-[50px] lg:w-[745px]">
           <div>
             <div className="h2 lg:pb-[16px]">
-              <h2 className="balance text-[30px] lg:text-[38px]" style={{fontFamily:'Gordita'}}>
+              <h2 className=" text-[30px] lg:text-[38px]">
                 Discover the perfect table for any occasion with ease.
               </h2>
             </div>
