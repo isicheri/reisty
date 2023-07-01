@@ -1,6 +1,25 @@
+/* @font-face {
+  font-family: 'Gordita';
+  src: url('./assets/fonts/Gordita\ Regular.woff') format('woff'); */
+  /* Add additional font formats here if needed */
+/* } */
+
+/* @font-face {
+  font-family: 'Gordita';
+  src: url('./assets/fonts/Gordita\ Regular.woff') format('woff'),
+  url('./assets/fonts/Gordita\ Regular.woff') format('woff'),
+       url('./assets/fonts/Gordita\ Regular.woff') format('woff'); */
+       
+/* } */
+
+/* .balance{
+  font-family: 'Gordita-Regular';
+  font-size: 700px;
+} */
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins';
+  font-family: 'Gordita';
 }

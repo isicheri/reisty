@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/* @font-face {
+    font-family: 'Gordita-medium';
+    src: url('./assets/fonts/Gordita\ Medium.woff') format('woff'); */
+    /* Add additional font formats here if needed */
+  /* }
+@font-face {
+    font-family: 'Gordita-thin';
+    src: url('./assets/fonts/Gordita\ Thin.woff') format('woff'); */
+    /* Add additional font formats here if needed */
+  /* } */
+/* @font-face {
+    font-family: 'Gordita-light';
+    src: url('./assets/fonts/Gordita\ Light.woff') format('woff'); */
+    /* Add additional font formats here if needed }*/
+  /* body{
+    font-family: 'Gordita';
+  } */
+
+  /* @font-face {
+    font-family: 'Gordita';
+    src: url('./assets/fonts/Gordita\ Regular.woff') format('woff'),
+         url('./assets/fonts/Gordita\ Regular.woff') format('woff'),
+         url('./assets/fonts/Gordita\ Regular.woff') format('woff');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  } */
+  
+  .hovshade:hover{
+    box-shadow: 10px 10px #BC172F;
+    /* background-color: red; */
+  }
+
+  /*  */

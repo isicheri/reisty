@@ -30,7 +30,7 @@ const Cardprops = (props) => {
     <>
       <div className=" min-w-max lg:min-w-fit" style={{backgroundColor: "", marginRight: "1rem"}}>
         <Link to= "/">
-        <div className="card relative bg-base-100 h-[340px] lg:h-[315px] border-2 border-gray-200 hover:shadow-lg  hover:shadow-[#BC172F]">
+        <div className="hovshade card relative bg-base-100 h-[340px] lg:h-[315px] border-2 border-gray-200">
           <div
             style={{ backgroundImage: "url(" + allBgs[curSlide] + ")" }}
             className="picPlace relative h-[200px] bg-red-50 lg:w-full w-[250px] "
