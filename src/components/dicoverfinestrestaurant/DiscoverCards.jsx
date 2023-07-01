@@ -58,7 +58,7 @@ const DiscoverCards = () => {
 </div>
 
 
-      <div className="lg:flex lg:items-center lg:pr-6 mt-2">
+      <div className="lg:flex lg:items-center lg:pr-6 mt-8">
         <div className="lg:flex-1 w-[100%] mt-4">
           <h1 className="text-[20px] lg:text-[24px] font-medium">
             Popular places

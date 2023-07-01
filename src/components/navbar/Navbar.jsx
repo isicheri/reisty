@@ -11,7 +11,7 @@ import "../navbar/Navbar.css";
 const Sidebar = () => {
   return (
     <>
-      <div className="flex justify-between px-[1.6rem] navbar h-[70px] lg:border-2 lg:border-b-gray-200 items-center lg:gap-6 w-full lg:pl-[4rem] lg:h-[90px] z-10 bg-white fixed lg:py-4">
+      <div className="flex justify-between px-[1.6rem] navbar h-[60px] lg:border-2 lg:border-b-gray-200 items-center lg:gap-6 w-full lg:pl-[4rem] lg:h-fit lg:py-4">
         <div className="logo">
           <NavLink to="/">
             <img src={Logo} alt="" />
