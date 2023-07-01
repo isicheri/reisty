@@ -36,5 +36,7 @@
     box-shadow: 10px 10px #BC172F;
     /* background-color: red; */
   }
-
+  .hovshade{
+    transition: 0.2s all linear;
+  }
   /*  */

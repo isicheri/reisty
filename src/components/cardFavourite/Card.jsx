@@ -27,7 +27,7 @@ const Card = () => {
         </Link>
       </div>
 
-      <div className=" flex flex-col gap-10">
+      <div className=" flex flex-col mb-[20px]">
         <div className=" flex flex-row overflow-x-scroll lg:grid lg:grid-cols-4 lg:overflow-hidden h-[50vh] gap-1 lg:h-[70vh]">
         <Cardprops
           image={Imgbrown}

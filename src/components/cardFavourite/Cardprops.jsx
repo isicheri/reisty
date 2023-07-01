@@ -30,10 +30,10 @@ const Cardprops = (props) => {
     <>
       <div className=" min-w-max lg:min-w-fit" style={{backgroundColor: "", marginRight: "1rem"}}>
         <Link to= "/">
-        <div className="hovshade card relative bg-base-100 h-[340px] lg:h-[315px] border-2 border-gray-200">
+        <div className="hovshade card relative bg-base-100 h-[340px] lg:h-[px] border-2 border-gray-200" style={{border:"1px solid red"}}>
           <div
             style={{ backgroundImage: "url(" + allBgs[curSlide] + ")" }}
-            className="picPlace relative h-[200px] bg-red-50 lg:w-full w-[250px] "
+            className="picPlace relative h-[205px] bg-red-50 lg:w-full w-[250px] "
           >
             <div className="heartFavourite w-full flex justify-end p-3">
             
