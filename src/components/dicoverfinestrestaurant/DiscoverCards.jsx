@@ -75,7 +75,7 @@ const DiscoverCards = () => {
         </Link>
       </div>
 
-      <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden gap-5 lg:grid lg:grid-cols-4">
+      <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden gap-1 lg:grid lg:grid-cols-4">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
@@ -128,7 +128,7 @@ const DiscoverCards = () => {
       </div>
 
       <div className="flex flex-col gap-5">
-        <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden gap-5 lg:grid grid-cols-4">
+        <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden gap-1 lg:grid grid-cols-4">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
@@ -159,7 +159,7 @@ const DiscoverCards = () => {
         />
         </div>
 
-        <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden gap-5 lg:grid grid-cols-4 ">
+        <div className="flex flex-row h-[50vh] lg:h-[60vh] overflow-x-scroll lg:overflow-hidden gap-1 lg:grid grid-cols-4 ">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"

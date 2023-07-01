@@ -28,7 +28,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="hero pt-[60px] h-max w-[100%] pb-10 lg:h-[93vh] text-center lg:pt-28">
+      <div className="hero pt-[60px] h-max w-[100%] pb-10 text-center lg:pt-28">
         <div className="text-[30px] leading-[40px] px-7 mx-auto text-center font-bold text-white lg:text-[45px] lg:leading-[50px] lg:w-[745px]">
           <div>
             <div className="h2 lg:pb-[16px]">
@@ -81,14 +81,14 @@ const Hero = () => {
               onFocus={dropDown}
               onBlur={hideDropDown}
               tabIndex="0"
-              className="guests min-w-[120px] w-full relative flex flex-col items-start border lg:p-0 lg:h-max lg:border-none border-gray-300 rounded-md py-2 px-4"
+              className="guests min-w-[120px] w-full relative flex flex-col items-start border lg:border-none border-gray-300 rounded-md py-2 px-4"
             >
               <div className="text-gray-400 text-xs">Guests</div>
               <div className="flex w-full justify-between">
                 <div className="chosenGuest font-semibold lg:text-sm min-w-max">
                   1 guest
                 </div>
-                <img src={arrowDown} className="-mt-3" />
+                <img src={arrowDown} className="-mt-3 w-3" />
               </div>
 
               <div
@@ -103,7 +103,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="flex gap-3 justify-center items-center border lg:rounded-full bg-red-700 border-gray-300  lg:border-none w-full rounded-md lg:p-0 p-4 lg:w-1/5 lg:aspect-square lg:items-center lg:justify-center ">
+            <div className="flex gap-3 py-3 justify-center items-center border lg:rounded-full bg-red-700 border-gray-300  lg:border-none w-full rounded-md lg:p-0 lg:w-1/5 lg:aspect-square lg:items-center lg:justify-center ">
               <img src={SearchBar} className="w-[30px] h-[30px] lg:p-1" alt="" />
               <div className="font-semibold  text-white lg:hidden">Search</div>
             </div>
