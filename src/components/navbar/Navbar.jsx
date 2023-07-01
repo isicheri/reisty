@@ -11,7 +11,7 @@ import "../navbar/Navbar.css";
 const Sidebar = () => {
   return (
     <>
-      <div className="flex justify-between px-[1.6rem] navbar h-[70px] lg:border-2 lg:border-b-gray-200 items-center lg:gap-6 w-[100%] lg:pl-[4rem] lg:pr[3rem] lg:h-[90px]">
+      <div className="flex justify-between px-[1.6rem] navbar h-[70px] lg:border-2 lg:border-b-gray-200 items-center lg:gap-6 w-full lg:pl-[4rem] lg:h-[90px] z-10 bg-white fixed lg:py-4">
         <div className="logo">
           <NavLink to="/">
             <img src={Logo} alt="" />
@@ -67,7 +67,7 @@ const Sidebar = () => {
         <div className="btns hidden lg:flex gap-4">
           <div className="login">
             <NavLink to="/login">
-              <button className="py-4 px-8 bg-white ring-1 ring-gray-300 rounded-xl font-semibold text-gray-900">
+              <button className="py-3 px-8 bg-white ring-1 ring-gray-300 rounded-lg font-semibold text-gray-900">
                 Log In
               </button>
             </NavLink>
@@ -75,7 +75,7 @@ const Sidebar = () => {
 
           <div className="signup">
             <NavLink to="/signup">
-              <button className="py-4 px-7 bg-[#BC172F] rounded-xl text-white font-medium">
+              <button className="py-3 px-7 bg-[#BC172F] rounded-lg text-white font-medium">
                 Sign Up
               </button>
             </NavLink>

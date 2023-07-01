@@ -6,7 +6,7 @@ import Playstore from "../../assets/playstore.svg";
 const BeforeFooter = () => {
   return (
     <>
-      <div className="beforefooter px-[16px] lg:flex lg:gap-24 mt-16 w-[100%] lg:pt-[47px] lg:px-14">
+      <div className="beforefooter px-[16px] lg:flex lg:gap-24 mt-8 w-full lg:pt-[47px] lg:px-14">
         <div className="text_button w-[20%] lg:w-[50%]">
           <h1 className=" text-center text-[25px] leading-[39px] w-[358px] lg:text-start text-white lg:text-[32px] font-bold lg:leading-9 lg:w-[368px]">
             Discover the finest restaurants on Reisty

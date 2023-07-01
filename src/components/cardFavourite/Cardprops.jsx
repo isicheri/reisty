@@ -28,9 +28,9 @@ const Cardprops = (props) => {
   const [curSlide, setSlide] = React.useState(0);
   return (
     <>
-      <div className=" min-w-max lg:min-w-fit" style={{backgroundColor: "", marginRight: "1rem"}}>
+      <div className=" min-w-max lg:min-w-fit" style={{marginRight: "1rem"}}>
         <Link to= "/">
-        <div className="hovshade card relative bg-base-100 h-[340px] lg:h-[px] border-2 border-gray-200" style={{border:"1px solid red"}}>
+        <div className="hovshade card relative bg-base-100 h-[340px] lg:max-h-min border-2 border-gray-200">
           <div
             style={{ backgroundImage: "url(" + allBgs[curSlide] + ")" }}
             className="picPlace relative h-[205px] bg-red-50 lg:w-full w-[250px] "

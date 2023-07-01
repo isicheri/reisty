@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const NavbarDuo = () => {
   return (
-    <div className="navbar border-2 justify-between border-b-gray-200 flex items-center lg:gap-6 lg:w-[100%] lg:pl-[4rem] lg:pr[3rem] lg:h-[90px]">
+    <div className="navbar border-2 justify-between border-b-gray-200 flex items-center lg:gap-6 lg:w-[100%] lg:pl-[4rem] lg:pr[rem] lg:h-[90px]">
         <div className='flex gap-8'>
         <div className="logo">
           <NavLink to="/">
@@ -49,7 +49,7 @@ const NavbarDuo = () => {
         <div className="btns flex gap-4">
           <div className="login">
             <NavLink to="/login">
-              <button className="py-4 px-8 bg-white ring-1 ring-gray-300 rounded-xl font-semibold text-gray-900">
+              <button className="py-3 px-8 bg-white ring-1 ring-gray-300 rounded-lg font-semibold text-gray-900">
                 Log In
               </button>
             </NavLink>
@@ -57,7 +57,7 @@ const NavbarDuo = () => {
 
           <div className="signup">
             <NavLink to="/signup">
-              <button className="py-4 px-7 bg-[#BC172F] rounded-xl text-white font-medium">
+              <button className="py-3 px-7 bg-[#BC172F] rounded-lg text-white font-medium">
                 Sign Up
               </button>
             </NavLink>
