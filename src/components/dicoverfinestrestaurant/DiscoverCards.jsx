@@ -18,7 +18,7 @@ const DiscoverCards = () => {
   return (
     <div className=" px-5 lg:px-16">
       <div>
-        <p className=" text-[24px] font-medium text-[#000000] pb-[13px]">
+        <p className=" text-[20px] font-medium text-[#000000] pb-[13px]">
           Discover our finest restaurants
         </p>
       </div>
@@ -63,7 +63,7 @@ const DiscoverCards = () => {
           <h1 className="text-[20px] lg:text-[24px] font-medium">
             Popular places
           </h1>
-          <p className=" pb-4 text-[14px] lg:text-[16px] font-normal text-[#2B2B2B]">
+          <p className=" pb-2 lg:pb-4 text-[14px] lg:text-[16px] font-normal text-[#2B2B2B]">
             Discover the best restaurants in your local area
           </p>
         </div>
@@ -115,7 +115,7 @@ const DiscoverCards = () => {
           <h1 className="text-[24px] font-medium">
             Best restaurants in Africa
           </h1>
-          <p className="text-[13px] pb-[20px] lg:text-[16px] font-normal text-[#2B2B2B]">
+          <p className="text-[13px] pb-[20px] lg:pb-3 lg:text-[16px] font-normal text-[#2B2B2B]">
             We have all the best restaurants in all of Africa for you
           </p>
         </div>
