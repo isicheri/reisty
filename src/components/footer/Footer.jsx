@@ -96,12 +96,12 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footerbottom w-[100%] mt-16 border-white  border-t-[1px]">
-            <div className="grid lg:flex justify-between pt-6 text-[14px]">
-              <div className=" text-center pb-">
+          <div className=" mt-14 text-center border-white  border-t-[1px]">
+            <div className="grid lg:flex justify-between pt-3 text-[12px]">
+              <div className="flex justify-center text-center">
                 <p>&copy; 2022 Reisty. All rights reserved.</p>
               </div>
-              <div className="flex pb-24 gap-2">
+              <div className="flex justify-center pb-6 gap-3">
                 <p>Global Privacy Policy</p>
                 <p>Terms of Service</p>
                 <p>Cookie Policy</p>
@@ -199,12 +199,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="footerbottom h-[80px] w-[100%] mt-16 border-white  border-t-[1px]">
-          <div className="grid lg:flex justify-between pt-6 text-[14px]">
+        <div className="footerbottom lg:pb-3 mt-16 border-white  border-t-[1px]">
+          <div className="grid lg:flex justify-between pt-3 text-[14px]">
             <div>
               <p>&copy; 2022 Reisty. All rights reserved.</p>
             </div>
-            <div className="flex gap-5">
+            <div className="flex gap-3">
               <p>Global Privacy Policy</p>
               <p>Terms of Service</p>
               <p>Cookie Policy</p>
