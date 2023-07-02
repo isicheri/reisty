@@ -73,7 +73,7 @@ const BeforeFooter = () => {
           </div>
         </div>
 
-        <div className="image w-[50%] mx-auto pt-4">
+        <div className="image mx-auto pt-4">
           <img src={BeforeFooterImage} alt="" />
         </div>
       </div>
