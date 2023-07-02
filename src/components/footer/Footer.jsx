@@ -97,7 +97,7 @@ const Footer = () => {
           </div>
 
           <div className=" flex justify-center mt-14 text-center  border-white  border-t-[1px]">
-            <div className="grid lg:flex justify-between pt-3 text-[8px]">
+            <div className="grid lg:flex justify-between pt-3 text-[12px]">
               <div className="flex justify-center text-center">
                 <p>&copy; 2022 Reisty. All rights reserved.</p>
               </div>
