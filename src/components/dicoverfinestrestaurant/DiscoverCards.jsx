@@ -60,7 +60,7 @@ const DiscoverCards = () => {
 
       <div className="lg:flex lg:items-center lg:pr-6 mt-8">
         <div className="lg:flex-1 w-[100%] mt-4">
-          <h1 className="text-[20px] lg:text-[24px] font-medium">
+          <h1 className="text-[20px] lg:text-[24px] font-semibold">
             Popular places
           </h1>
           <p className=" pb-2 lg:pb-4 text-[14px] lg:text-[16px] font-normal text-[#2B2B2B]">
@@ -112,7 +112,7 @@ const DiscoverCards = () => {
 
       <div className=" pb-1 lg:pb-6 grid grid-cols-1 lg:flex items-center pr-6 mt-16">
         <div className="flex-1 w-[100%]">
-          <h1 className="text-[24px] font-medium">
+          <h1 className="text-[24px] font-semibold">
             Best restaurants in Africa
           </h1>
           <p className="text-[13px] pb-[20px] lg:pb-3 lg:text-[16px] font-normal text-[#2B2B2B]">

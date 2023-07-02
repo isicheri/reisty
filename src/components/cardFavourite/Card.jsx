@@ -11,7 +11,7 @@ const Card = () => {
     <div className="px-5 lg:px-16  mt-16 " style={{backgroundColor: ""}}>
       <div className="lg:pb-6 lg:flex lg:items-center lg:pr-6">
         <div className="lg:flex-1">
-          <h1 className="text-[20px] lg:text-[24px] font-medium">
+          <h1 className="text-[20px] lg:text-[24px] font-semibold">
             Featured Restaurants
           </h1>
           <p className="pb-4 text-[14px] lg:text-[16px] font-normal text-[#2B2B2B]">

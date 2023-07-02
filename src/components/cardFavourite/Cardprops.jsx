@@ -74,7 +74,7 @@ const Cardprops = (props) => {
           
           </div>
           <div className="card-body px-4 pt-8 lg:pt-2">
-            <h2 className="card-title text-[20px] text-[#2B2B2B] font-medium">
+            <h2 className="card-title text-[20px] text-[#2B2B2B] font-semibold">
               {props.name}
             </h2>
             <p className="pb-2">{props.location}</p>
