@@ -19,32 +19,33 @@ const BeforeFooter = () => {
             adventures with Reisty.
           </p>
 
-         <div className="flex w-[100vw] gap-4  text-red-500 mx-12 lg:hidden">
-           <div className=" mt-4 py-3 w-32 pl-2 bg-white rounded-md">
-            <div className="flex gap-2">
-              <div>
-                <img src={Appstore} alt="" />
+          <div className="flex gap-4 justify-center  text-red-500 lg:hidden">
+            <div className=" mt-4 py-3 w-32 pl-2 bg-white rounded-md">
+              <div className="flex gap-2">
+                <div>
+                  <img src={Appstore} alt="" />
+                </div>
+                <div>
+                  <h2 className="text-[9.18px] font-medium">Download on the</h2>
+                  <h1 className="text-[15.3px] font-semibold">App Store</h1>
+                </div>
               </div>
-              <div>
-                <h2 className="text-[9.18px] font-medium">Download on the</h2>
-                <h1 className="text-[15.3px] font-semibold">App Store</h1>
+            </div>
+
+            <div className=" mt-4 py-3 w-32 pl-2 bg-white rounded-md">
+              <div className="flex gap-2">
+                <div>
+                  <img src={Playstore} alt="" />
+                </div>
+                <div>
+                  <h2 className="text-[9.18px] font-medium">Get it on the</h2>
+                  <h1 className="text-[15.3px] font-semibold">Play Store</h1>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className=" mt-4 py-3 w-32 pl-2 bg-white rounded-md">
-            <div className="flex gap-2">
-              <div>
-                <img src={Playstore} alt="" />
-              </div>
-              <div>
-                <h2 className="text-[9.18px] font-medium">Get it on the</h2>
-                <h1 className="text-[15.3px] font-semibold">Play Store</h1>
-              </div>
-            </div>
-          </div>
 
-         </div>
           <div className=" hidden gap-5 mt-6 text-red-500 lg:flex">
             <div className=" lg:py-3 lg:px-4 py-3 px-16 bg-white rounded-md">
               <div className="flex gap-2">
