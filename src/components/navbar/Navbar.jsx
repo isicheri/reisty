@@ -8,6 +8,7 @@ import { BiMenu } from "react-icons/bi";
 import { BiSearch } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";
 import "../navbar/Navbar.css";
+import  Dropdown  from "../../assets/dropdownarrow.svg";
 
 const Sidebar = () => {
   const [setNav, isSetNav] = useState(false);
@@ -126,7 +127,7 @@ const Sidebar = () => {
         >
           <ul className="grid gap-6 ">
             <li className="text-[#BC172F] font-semibold text-[18px]">For Restaurants</li>
-            <li className="text-[#BC172F] font-semibold pb-5 border-b-2 text-[18px]">Country</li>
+            <li className="text-[#BC172F] flex items-center gap-2 font-semibold pb-5 border-b-2 text-[18px]">Country <span><img src={Dropdown} alt="" /></span></li>
             <li className=" font-medium text-[16px]">Privacy and Policy</li>
             <li className=" font-medium text-[16px]">Terms of services</li>
             <li className=" font-medium text-[16px] pb-10 border-b-2">Cookie Policy</li>
