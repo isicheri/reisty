@@ -127,9 +127,9 @@ const Sidebar = () => {
           <ul className="grid gap-6 ">
             <li className="text-[#BC172F] font-semibold text-[20px]">For Restaurants</li>
             <li className="text-[#BC172F] font-semibold pb-5 border-b-2 text-[20px]">Country</li>
-            <li className="text-gray-700 font-semibold text-[18px]">Privacy and Policy</li>
-            <li className="text-gray-700 font-semibold text-[18px]">Terms of services</li>
-            <li className="text-gray-700 font-semibold text-[18px] pb-10 border-b-2">Cookie Policy</li>
+            <li className="text-gray-700 font-medium text-[18px]">Privacy and Policy</li>
+            <li className="text-gray-700 font-medium text-[18px]">Terms of services</li>
+            <li className="text-gray-700 font-medium text-[18px] pb-10 border-b-2">Cookie Policy</li>
           </ul>
 
           <div className=" flex flex-col justify-center gap-8 py-10" >
