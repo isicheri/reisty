@@ -9,6 +9,7 @@ import { HiHeart } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import RatingStar from "../rating/RatingStar";
 import ForwardArrow from "../../assets/forwardarrow.svg"
+import BackwardArrow from "../../assets/backwardarrow.svg"
 // import BackwardArrow from "../../assets/backwardarrow.png"
 
 const Cardprops = (props) => {
@@ -63,7 +64,7 @@ const Cardprops = (props) => {
                     setSlide((cur) => cur - 1);
                   }}
                 >
-                  <img src={ForwardArrow} alt="" className="text-[50px]"/>
+                  <img src={BackwardArrow} alt="" className="text-[50px]"/>
                 </div>
 
                 <div
@@ -78,8 +79,17 @@ const Cardprops = (props) => {
                   }}
                 >
                  <img src={ForwardArrow} alt="" />
+
                 </div>
               </div>
+
+              <div className=" stepper opacity-0 w-full flex gap-1 justify-center items-center text-yellow-500 absolute bottom-2 left-1/2 -translate-x-1/2 h-2">
+                <div style={curSlide === 0? {opacity: 1} : {opacity: '45%'}} className="w-2 h-2 rounded-full bg-white"></div>
+                <div style={curSlide === 1? {opacity: 1} : {opacity: '45%'}} className="w-2 h-2 rounded-full bg-white"></div>
+                <div style={curSlide === 2? {opacity: 1} : {opacity: '45%'}} className="w-2 h-2 rounded-full bg-white"></div>
+                <div style={curSlide === 3? {opacity: 1} : {opacity: '45%'}} className="w-2 h-2 rounded-full bg-white"></div>
+              </div>
+
             </div>
             <div className="card-body px-4 pt-8 lg:pt-2">
               <h2 className="card-title text-[20px] text-[#2B2B2B] font-semibold">

@@ -1,46 +1,52 @@
-.first{
-    background-image: url("../assets/bgT.svg");
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
+.first {
+  background-image: url("../assets/bgT.svg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
 }
-.second{
-    background-image: url("../assets/imgwaitlist.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.second {
+  background-image: url("../assets/imgwaitlist.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (width <= 640px) {
-    .first{
+  .first {
     background-image: url("../assets/ownersclaimermobile.png");
     background-size: cover;
-    background-position:0 10px;
+    background-position: 0 10px;
     background-repeat: no-repeat;
-    }
+  }
 }
 
-.arrows{
-top: 50%;
-transform: translate(0%, -50%);
-opacity: 0;
-transition: all ease-out .3s;
-transition-delay: .2s;
+.arrows {
+  top: 50%;
+  transform: translate(0%, -50%);
+  opacity: 0;
+  transition: all ease-out 0.3s;
+  transition-delay: 0.2s;
 }
 
-.picPlace:hover .arrows{
-    opacity: 1;
+.stepper {
+  transition: all ease-out 0.3s;
+  transition-delay: 0.2s;
+}
+
+.picPlace:hover .arrows,
+.picPlace:hover .stepper {
+  opacity: 1;
 }
 
 .picPlace {
-    transition: all ease-out .4s;
+  transition: all ease-out 0.4s;
 }
 
 .arrows .arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight:900;
-    text-align: center;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
 }
