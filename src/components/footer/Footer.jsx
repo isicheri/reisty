@@ -199,7 +199,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="footerbottom lg:pb-3 mt-16 border-white  border-t-[1px]">
+        <div className="footerbottom lg:pb-8 mt-16 border-white  border-t-[1px]">
           <div className="grid lg:flex justify-between pt-3 text-[14px]">
             <div>
               <p>&copy; 2022 Reisty. All rights reserved.</p>

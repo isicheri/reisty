@@ -18,7 +18,7 @@ const DiscoverCards = () => {
   return (
     <div className=" px-5 lg:px-16">
       <div>
-        <p className=" text-[20px] font-medium text-[#000000] pb-[13px]">
+        <p className=" text-[20px] font-semibold text-[#000000] pb-[13px]">
           Discover our finest restaurants
         </p>
       </div>
@@ -69,7 +69,7 @@ const DiscoverCards = () => {
         </div>
         <Link to = "/">
         <div className="flex gap-2 items-center">
-          <h1 className="text-[#BC172F] font-medium text-[20px]">See more</h1>
+          <h1 className="text-[#BC172F] font-semibold text-[20px]">See more</h1>
           <img src={Arrow} alt="" className="pt-2" />
         </div>
         </Link>
@@ -121,7 +121,7 @@ const DiscoverCards = () => {
         </div>
         <Link to = "/">
         <div className="flex gap-2 items-center">
-          <h1 className="text-[#BC172F] font-medium text-[20px] pb-0">See more</h1>
+          <h1 className="text-[#BC172F] font-semibold text-[20px] pb-0">See more</h1>
           <img src={Arrow} alt="" className="pt-2" />
         </div>
         </Link>

@@ -8,7 +8,7 @@ import Arrow from "../../assets/seemorearrow.svg";
 import { NavLink , Link } from "react-router-dom";
 const Card = () => {
   return (
-    <div className="px-5 lg:px-16  mt-16 " style={{backgroundColor: ""}}>
+    <div className="px-5 lg:px-16  mt-14 " style={{backgroundColor: ""}}>
       <div className="lg:pb-6 lg:flex lg:items-center lg:pr-6">
         <div className="lg:flex-1">
           <h1 className="text-[20px] lg:text-[24px] font-semibold">
@@ -21,7 +21,7 @@ const Card = () => {
 
         <Link to = "/"> 
         <div className="mb-3 flex gap-2 items-center">
-          <h1 className="text-[#BC172F] font-medium text-[20px]">See more</h1>
+          <h1 className="text-[#BC172F] font-semibold text-[20px]">See more</h1>
           <img src={Arrow} alt="" srcset="" className=" pt-[6px]" />
         </div>
         </Link>

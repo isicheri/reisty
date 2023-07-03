@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../assets/reistynewlogo.svg";
-import Flag from "../../assets/ngflag.png";
+import Flag from "../../assets/ngflag.svg";
 import Arrow from "../../assets/dropdownarrow.svg";
 // import Searchicon from "../../assets/searchicon.svg";
 import { NavLink, Link } from "react-router-dom";
