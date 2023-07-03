@@ -132,7 +132,7 @@ const Sidebar = () => {
             <li className=" font-medium text-[16px] pb-10 border-b-2">Cookie Policy</li>
           </ul>
 
-          <div className=" flex flex-col justify-center gap-8 py-10" >
+          <div className=" flex flex-col justify-center gap-6 pt-16" >
               <button className="border-none w-full bg-white py-3 ring-1 ring-gray-300 rounded-lg font-semibold text-gray-900 text-[20px]">Log In</button>
               <button className="border-none text-[20px] text-white w-full py-3 bg-[#BC172F] ring-1 ring-gray-300 rounded-lg font-semibold">Sign Up</button>
           </div>
