@@ -113,3 +113,8 @@
     margin-top: 2.8rem;
     max-height: 100vh;
   }
+
+  .rxcross{
+    transition: all ease-out 0.3s;
+    transition-delay: 0.2s;
+  }

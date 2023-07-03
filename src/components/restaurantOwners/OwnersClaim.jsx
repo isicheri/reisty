@@ -13,8 +13,8 @@ const OwnersClaim = () => {
 
       <div className="grid lg:min-h-max w-full lg:flex"> 
         <div className="text py-[22px] px-[30px] lg:w-full bg-[#F2F2F2] text-black lg:py-[45px] pl-[18px] pr-[8px]" >
-            <h2 className=" text-[16px] lg:text-[17px] font-bold">WAITLIST MANAGEMENT</h2>
-            <h1 className=" text-[20px] lg:text-[40px] font-bold leading-[30px] lg:leading-[43px] py-5  lg:w-[300px]">WAITLIST MANAGEMENT WITH REISTY</h1>
+            <h2 className=" text-[18px] lg:text-[17px] font-bold">WAITLIST MANAGEMENT</h2>
+            <h1 className=" text-[20px] lg:text-[40px] font-bold leading-[30px] lg:leading-[43px] lg:py-5 py-2  lg:w-[300px]">WAITLIST MANAGEMENT WITH REISTY</h1>
             <p className="text-[14px] w-[300px] lg:w-[325px] lg:text-[17px] pb-4 lg:lg:leading-5 font-medium">Maximize seating efficiency with Reisty's waitlist management tool. Estimate wait times, send SMS notifications, and increase revenue while improving customer satisfaction</p>
             <button className="py-4 px-6 rounded-xl bg-[#BC172F] text-white font-medium">Create a free account</button>
         </div>
