@@ -8,7 +8,7 @@ import BeforeFooter from "../../components/beforefooter/BeforeFooter";
 import {toast} from "react-toastify"
 
 const Home = () => {
-  toast.success("Welcome");
+  // toast.success("Welcome");
   return (
     <div className=" overflow-x-hidden">
       <Navbar />
