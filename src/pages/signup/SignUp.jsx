@@ -201,7 +201,7 @@ const SignUp = () => {
                   Create account
                 </button>
               </div>
-              <div className=" my-2 lg:pt-[19px]">
+              <div className=" mt-2 pb-4 lg:mt-0 lg:pb-0 lg:pt-[19px]">
                 <span className="text-[#717171] text-[14px]">
                   Already have an account?
                 </span>

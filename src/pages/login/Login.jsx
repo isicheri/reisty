@@ -98,8 +98,8 @@ const Login = () => {
                 </button>
               </div>
             </form>
-          <div className="w-[] border-b-2 border-b-gray-200 lg:pt-8 mb-1 lg:mb-8"></div>
-          <div className="text-center pb-2">
+          <div className="border-b-2 border-b-gray-200 lg:pt-8 lg:mb-8"></div>
+          <div className="text-center pb-3">
             <span>Don't have an account? </span>
             <Link to="/signup">
             <span className="text-red-700 font-medium text-[12px] lg:text-[14px]">Create a free account</span>
