@@ -130,7 +130,7 @@ const Sidebar = () => {
             <li className="text-[#BC172F] font-semibold text-[18px]">
               For Restaurants
             </li>
-            <li className="text-[#BC172F] flex items-center gap-2 font-semibold pb-5 border-b-2 text-[18px]">
+            <li className="text-[#BC172F] flex items-center gap-2 font-semibold pb-5 border-b-1 text-[18px]">
               Country{" "}
               <span>
                 <img src={Dropdown} alt="" />
@@ -138,7 +138,7 @@ const Sidebar = () => {
             </li>
             <li className=" font-medium text-[16px]">Privacy and Policy</li>
             <li className=" font-medium text-[16px]">Terms of services</li>
-            <li className=" font-medium text-[16px] pb-10 border-b-2">
+            <li className=" font-medium text-[16px] pb-10 border-b-1">
               Cookie Policy
             </li>
           </ul>

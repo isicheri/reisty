@@ -98,11 +98,11 @@ const Login = () => {
                 </button>
               </div>
             </form>
-          <div className="w-[] border-b-2 border-b-gray-200 lg:pt-8 mb-3 lg:mb-8"></div>
-          <div className="text-center">
+          <div className="w-[] border-b-2 border-b-gray-200 lg:pt-8 mb-1 lg:mb-8"></div>
+          <div className="text-center pb-2">
             <span>Don't have an account? </span>
             <Link to="/signup">
-            <span className="text-red-700 font-medium text-[14px]">Create a free account</span>
+            <span className="text-red-700 font-medium text-[12px] lg:text-[14px]">Create a free account</span>
             </Link>
           </div>
           </div>

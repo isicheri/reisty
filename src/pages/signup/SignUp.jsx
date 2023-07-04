@@ -33,7 +33,7 @@ const SignUp = () => {
     <div>
       <NavbarDuo />
       <div className="bg-white min-h-screen">
-        <div className="mx-auto w-full overflow-x-hiddenhidden lg:max-w-[45%] pt-16 mb-28">
+        <div className="mx-auto w-full overflow-x-hiddenhidden lg:max-w-[45%] pt-16 lg:mb-28">
           <div className="bg-white shadow-2xl rounded px-[2rem] lg:px-28 lg:pt-8 lg:pb-8 lg:mb-4">
             <div className="flex justify-center pb-6">
               <img src={LogoT} alt="" />
@@ -201,7 +201,7 @@ const SignUp = () => {
                   Create account
                 </button>
               </div>
-              <div className="pt-[19px]">
+              <div className=" my-2 lg:pt-[19px]">
                 <span className="text-[#717171] text-[14px]">
                   Already have an account?
                 </span>
