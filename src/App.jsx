@@ -7,6 +7,8 @@ import SignUp from "./pages/signup/SignUp";
 // import SeeMore from "./components/restaurantsinLocation/RestaurantsinLocation";
 import RestaurantsinLocation from "./components/restaurantsinLocation/RestaurantsinLocation";
 import RestaurantProfile from "./pages/restaurantProfile/RestaurantProfile";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 // import Blog from "./pages/aboutUs/Blog";
 // import Career from "./pages/aboutUs/Career";
 // import OurTeam from "./pages/aboutUs/OurTeam";
@@ -19,6 +21,7 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
+      <ToastContainer />
         <Routes>
           <Route path="/">
             <Route index element={<Home />} />

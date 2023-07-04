@@ -5,30 +5,55 @@ import GoogleIcon from "../../assets/google.svg";
 import AppleIcon from "../../assets/apple.svg";
 import LogoT from "../../assets/logoT.svg";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 // import Navbar from "../../components/navbar/Navbar";
 // https://ekwonye-richard.github.io/react-flags-select/?path=/story/reactflagsselect--primary
-
+const initialState = {
+  firstName: "",
+  lastName: "",
+  emailAddress: "",
+  phoneNumber: "",
+  country: "",
+  password: "",
+  confirmPassword: ""
+}
 const SignUp = () => {
-  // const [firstName, setFirstName] = useState("")
-  // const [lastName, setLastName] = useState("")
-  // const [phoneNo, setPhoneNoName] = useState("")
-  // const [country, setCountry] = useState("")
-  // const [email, setEmail] = useState("")
-  // const [password, setPassword] = useState("")
+  const [formData, setFormData] = useState(initialState);
+  const {firstName, lastName, emailAddress, phoneNumber, country, password, confirmPassword} = formData;
+  
+  const handleInputChange = (e) => {
+    const {name, value} = e.target;
+    setFormData({...formData, [name]: value});
+  }
 
-  const [formDataSignUp, setFormDataSignUp] = useState({
-    // firstName: "",
-    // lastName: "",
-    // email: "",
-    // phoneNo: "",
-    // country: "",
-    // password: "",
-  });
+  const createNewUser = async(e)=>{
+    e.preventDefault();
+    if(!firstName){
+      return toast.error("First Name is required");
+    } 
 
-  const handleChangeSignUp = (e) => {
-    // setFormDataSignUp({ ...formDataSignUp, [e.target.name]: e.target.value });
-  };
+    if(!lastName){
+      return toast.error("Last Name is required");
+    }
+
+    if(!emailAddress){
+      return toast.error("Email Address is required");
+    }
+    if(!phoneNumber){
+      return toast.error("Phone Number is required");
+    }
+    if(!country){
+      return toast.error("country is required");
+    }
+    if(!password){
+      return toast.error("Password is required");
+    }
+    if(!confirmPassword){
+      return toast.error("Confirm password is required");
+    }
+    return toast.success("Successful");
+  }
   return (
     <div>
       <NavbarDuo />
@@ -65,7 +90,7 @@ const SignUp = () => {
               <div className="dashtwo border-b-2 border-black-100 w-[150px]"></div>
             </div>
 
-            <form className=" justify-center">
+            <form onSubmit={createNewUser} className=" justify-center">
               <div className="mb-4 w-[100%] justify-center">
                 <label
                   className="block py-3 text-gray-700 font-medium mb-2"
@@ -79,8 +104,8 @@ const SignUp = () => {
                   name="firstName"
                   type="text"
                   placeholder="First Name"
-                  value={formDataSignUp.firstName}
-                  onChange={handleChangeSignUp}
+                  value={firstName}
+                  onChange={handleInputChange}
                 />
 
                 <label
@@ -92,8 +117,8 @@ const SignUp = () => {
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
                   name="lastName"
-                  value={formDataSignUp.lastName}
-                  onChange={handleChangeSignUp}
+                  value={lastName}
+                  onChange={handleInputChange}
                   type="text"
                   placeholder="Last Name"
                 />
@@ -107,9 +132,9 @@ const SignUp = () => {
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
                   // id="email"
-                  name="email"
-                  value={formDataSignUp.email}
-                  onChange={handleChangeSignUp}
+                  name="emailAddress"
+                  value={emailAddress}
+                  onChange={handleInputChange}
                   type="text"
                   placeholder="Email address"
                 />
@@ -123,9 +148,9 @@ const SignUp = () => {
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
                   // id="username"
-                  name="phoneNo"
-                  value={formDataSignUp.phoneNo}
-                  onChange={handleChangeSignUp}
+                  name="phoneNumber"
+                  value={phoneNumber}
+                  onChange={handleInputChange}
                   type="text"
                   placeholder="Phone Number"
                 />
@@ -140,8 +165,8 @@ const SignUp = () => {
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
                   // id="country"
                   name="country"
-                  value={formDataSignUp.country}
-                  onChange={handleChangeSignUp}
+                  value={country}
+                  onChange={handleInputChange}
                   type="text"
                   placeholder="Country of resisdence"
                 />
@@ -156,8 +181,8 @@ const SignUp = () => {
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
                   // id="password"
                   name="password"
-                  value={formDataSignUp.password}
-                  onChange={handleChangeSignUp}
+                  value={password}
+                  onChange={handleInputChange}
                   type="password"
                   placeholder="Password"
                 />
@@ -171,9 +196,9 @@ const SignUp = () => {
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
                   // id="password"
-                  name="Confirm Password"
-                  value={formDataSignUp.password}
-                  onChange={handleChangeSignUp}
+                  name="confirmPassword"
+                  value={confirmPassword}
+                  onChange={handleInputChange}
                   type="password"
                   placeholder/>
               </div>
@@ -196,7 +221,7 @@ const SignUp = () => {
               <div className="flex items-center pt-8 justify-between">
                 <button
                   className="bg-red-700 text-white w-[100%] font-normal py-4 px-3 rounded-xl focus:outline-none focus:shadow-outline"
-                  type="button"
+                  type="submit"
                 >
                   Create account
                 </button>
