@@ -4,6 +4,7 @@ import FacebookIcon from "../../assets/facebook.svg";
 import GoogleIcon from "../../assets/google.svg";
 import AppleIcon from "../../assets/apple.svg";
 import LogoT from "../../assets/logoT.svg";
+import { Link } from "react-router-dom";
 
 // import Navbar from "../../components/navbar/Navbar";
 // https://ekwonye-richard.github.io/react-flags-select/?path=/story/reactflagsselect--primary
@@ -32,8 +33,8 @@ const SignUp = () => {
     <div>
       <NavbarDuo />
       <div className="bg-white min-h-screen">
-        <div className="mx-auto w-[100%] overflow-x-hiddenhidden lg:max-w-[45%] pt-16 mb-28">
-          <div className="bg-white shadow-2xl rounded px-28 pt-8 pb-8 mb-4">
+        <div className="mx-auto w-full overflow-x-hiddenhidden lg:max-w-[45%] pt-16 mb-28">
+          <div className="bg-white shadow-2xl rounded px-[2rem] lg:px-28 lg:pt-8 lg:pb-8 lg:mb-4">
             <div className="flex justify-center pb-6">
               <img src={LogoT} alt="" />
             </div>
@@ -204,9 +205,11 @@ const SignUp = () => {
                 <span className="text-[#717171] text-[14px]">
                   Already have an account?
                 </span>
+                <Link to="/login">
                 <span className="text-red-700 font-medium text-[14px]">
                   Login
                 </span>
+                </Link>
               </div>
             </form>
           </div>

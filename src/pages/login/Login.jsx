@@ -6,6 +6,7 @@ import FacebookIcon from "../../assets/facebook.svg";
 import GoogleIcon from "../../assets/google.svg";
 import AppleIcon from "../../assets/apple.svg";
 import NavbarDuo from "../../components/navbar/NavbarDuo";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const handleFacebookLogin = () => {
@@ -23,9 +24,9 @@ const Login = () => {
   return (
     <div>
       <NavbarDuo />
-      <div className="bg-white min-h-screen">
-        <div className="mx-auto max-w-[45%] pt-16 mb-28">
-          <div className="bg-white shadow-2xl rounded px-28 pt-8 pb-8 mb-4">
+      <div className="bg-white min-h-full ">
+        <div className="mx-auto w-full lg:max-w-[45%] pt-12 lg:pt-16">
+          <div className="bg-white shadow-2xl rounded px-[2rem] lg:px-28 pt-6 lg:pt-8 lg:pb-8 lg:mb-4">
             <div className="flex justify-center pb-6">
               <img src={LogoT} alt="" />
             </div>
@@ -97,10 +98,12 @@ const Login = () => {
                 </button>
               </div>
             </form>
-          <div className="w-[] border-b-2 border-b-gray-200 pt-8 mb-8"></div>
+          <div className="w-[] border-b-2 border-b-gray-200 lg:pt-8 mb-3 lg:mb-8"></div>
           <div className="text-center">
             <span>Don't have an account? </span>
+            <Link to="/signup">
             <span className="text-red-700 font-medium text-[14px]">Create a free account</span>
+            </Link>
           </div>
           </div>
         </div>

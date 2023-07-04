@@ -8,7 +8,7 @@ import { BiMenu } from "react-icons/bi";
 import { BiSearch } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";
 import "../navbar/Navbar.css";
-import  Dropdown  from "../../assets/dropdownarrow.svg";
+import Dropdown from "../../assets/dropdownarrow.svg";
 
 const Sidebar = () => {
   const [setNav, isSetNav] = useState(false);
@@ -119,25 +119,44 @@ const Sidebar = () => {
         </div>
       </div>
       {!setNav ? (
-       ""
+        ""
       ) : (
-        <div
-          className="rxcross h-full fixed w-full bg-white z-[500] lg:hidden py-8 px-[2rem]"
-          style={{ border: ""}}
+       <div className="rxcross">
+         <div
+          className=" h-full fixed w-full bg-white z-[500] lg:hidden py-8 px-[2rem]"
+          style={{ border: "" }}
         >
           <ul className="grid gap-6 ">
-            <li className="text-[#BC172F] font-semibold text-[18px]">For Restaurants</li>
-            <li className="text-[#BC172F] flex items-center gap-2 font-semibold pb-5 border-b-2 text-[18px]">Country <span><img src={Dropdown} alt="" /></span></li>
+            <li className="text-[#BC172F] font-semibold text-[18px]">
+              For Restaurants
+            </li>
+            <li className="text-[#BC172F] flex items-center gap-2 font-semibold pb-5 border-b-2 text-[18px]">
+              Country{" "}
+              <span>
+                <img src={Dropdown} alt="" />
+              </span>
+            </li>
             <li className=" font-medium text-[16px]">Privacy and Policy</li>
             <li className=" font-medium text-[16px]">Terms of services</li>
-            <li className=" font-medium text-[16px] pb-10 border-b-2">Cookie Policy</li>
+            <li className=" font-medium text-[16px] pb-10 border-b-2">
+              Cookie Policy
+            </li>
           </ul>
 
-          <div className=" flex flex-col justify-center gap-6 pt-16" >
-              <button className="border-none w-full bg-white py-3 ring-1 ring-gray-300 rounded-lg font-semibold text-gray-900 text-[20px]">Log In</button>
-              <button className="border-none text-[20px] text-white w-full py-3 bg-[#BC172F] ring-1 ring-gray-300 rounded-lg font-semibold">Sign Up</button>
+          <div className=" flex flex-col justify-center gap-6 pt-16">
+          <NavLink to="/login">
+            <button className="border-none w-full bg-white py-3 ring-1 ring-gray-300 rounded-lg font-semibold text-gray-900 text-[20px]">
+              Log In
+            </button>
+            </NavLink>
+            <NavLink to="/signup">
+            <button className="border-none text-[20px] text-white w-full py-3 bg-[#BC172F] ring-1 ring-gray-300 rounded-lg font-semibold">
+              Sign Up
+            </button>
+            </NavLink>
           </div>
         </div>
+       </div>
       )}
     </>
   );
