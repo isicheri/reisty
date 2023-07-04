@@ -30,7 +30,7 @@ const Login = () => {
             <div className="flex justify-center pb-6">
               <img src={LogoT} alt="" />
             </div>
-            <div className="text-center flex justify center pb-6">
+            <div className="text-center flex justify-center center pb-6">
               <p>
                 Your account information and reservations are securely managed
                 by Reisty.
