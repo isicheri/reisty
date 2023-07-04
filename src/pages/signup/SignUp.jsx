@@ -6,9 +6,12 @@ import AppleIcon from "../../assets/apple.svg";
 import LogoT from "../../assets/logoT.svg";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import { createUser } from "../../services/authServices";
 
 // import Navbar from "../../components/navbar/Navbar";
 // https://ekwonye-richard.github.io/react-flags-select/?path=/story/reactflagsselect--primary
+
+
 const initialState = {
   firstName: "",
   lastName: "",
@@ -52,7 +55,22 @@ const SignUp = () => {
     if(!confirmPassword){
       return toast.error("Confirm password is required");
     }
-    return toast.success("Successful");
+   try {
+    const userData = {
+      firstName,
+      lastName,
+      emailAddress,
+      phoneNumber,
+      country,
+      password,
+      confirmPassword
+    }
+
+   const save = await createUser(userData);
+   toast.success(save.status)
+   } catch (error) {
+    toast.error(error)
+   }
   }
   return (
     <div>

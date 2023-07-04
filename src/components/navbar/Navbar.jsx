@@ -17,7 +17,7 @@ const Sidebar = () => {
   };
   return (
     <>
-      <div className="navbar flex px-[1.6rem] h-[55px] lg:border-2 lg:border-b-gray-200 items-center w-full lg:px-[4rem] md:w-full lg:h-fit lg:py-4">
+      <div className="Navbar fixed flex px-[1.6rem] h-[55px] bg-white lg:border-2 lg:border-b-gray-200 items-center w-full lg:px-[4rem] md:w-full lg:h-fit lg:py-4">
         <div className="flex flex-1">
           <div className="flex gap-10 items-center ">
             <div className="logo flex-1 lg:grid">

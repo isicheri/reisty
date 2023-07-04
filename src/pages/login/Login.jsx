@@ -7,7 +7,7 @@ import GoogleIcon from "../../assets/google.svg";
 import AppleIcon from "../../assets/apple.svg";
 import NavbarDuo from "../../components/navbar/NavbarDuo";
 import { Link } from "react-router-dom";
-import Example from "../../components/countrydropdown/CountryDropdown";
+// import Example from "../../components/countrydropdown/CountryDropdown";
 // import CountrySelector from "../../components/countrydropdown/CountryDropdown";
 
 const Login = () => {
@@ -67,7 +67,6 @@ const Login = () => {
                 >
                   Email address
                 </label>
-                <Example/>
                 <input
                   className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
                   id="username"
