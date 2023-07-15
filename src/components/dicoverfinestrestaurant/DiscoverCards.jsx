@@ -75,7 +75,7 @@ const DiscoverCards = () => {
         </Link>
       </div>
 
-      <div className="flex flex-row h-[50vh] lg:h-min pb-4 mb-6 overflow-x-scroll lg:overflow-hidden gap-1 lg:grid lg:grid-cols-4">
+      <div className="flex flex-row pb-4 mb-3 overflow-x-scroll lg:overflow-hidden gap-1 lg:grid lg:grid-cols-4">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
@@ -110,7 +110,7 @@ const DiscoverCards = () => {
         <OwnersClaim />
       </div>
 
-      <div className=" pb-1 lg:pb-6 grid grid-cols-1 lg:flex items-center pr-6 mt-16">
+      <div className=" pb-1 lg:pb-6 grid grid-cols-1 lg:flex items-center pr-6">
         <div className="flex-1 w-[100%]">
           <h1 className="text-[24px] font-semibold">
             Best restaurants in Africa
@@ -128,7 +128,7 @@ const DiscoverCards = () => {
       </div>
 
       <div className="flex flex-col gap-5">
-        <div className="flex flex-row h-[50vh] lg:h-min pb-4 mb-6 overflow-x-scroll lg:overflow-hidden gap-1 lg:grid grid-cols-4">
+        <div className="flex flex-row pb-4 mb-6 overflow-x-scroll lg:overflow-hidden gap-1 lg:grid grid-cols-4">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"
@@ -159,7 +159,7 @@ const DiscoverCards = () => {
         />
         </div>
 
-        <div className="flex flex-row h-[50vh] lg:h-min pb-4 mb-6 overflow-x-scroll lg:overflow-hidden gap-1 lg:grid grid-cols-4 ">
+        <div className="flex flex-row pb-4 mb-4 overflow-x-scroll lg:overflow-hidden gap-1 lg:grid grid-cols-4 ">
         <Cardprops
           image={Imgbrown}
           name="Terra Kulture"

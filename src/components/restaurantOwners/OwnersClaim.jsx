@@ -3,7 +3,7 @@ import React from "react";
 
 const OwnersClaim = () => {
   return (
-    <div className="w-full mb-4 lg:mb-8 grid grid-cols-1 lg:grid-cols-2 mt-4 gap-2">
+    <div className="w-full mb-4 lg:mb-8 grid grid-cols-1 lg:grid-cols-2 lg:mt-8 gap-2">
       <div className="first px-[26px] pt-[82px] pb-4 lg:grid min-h-max w-full lg:w-[550px] lg:min-h-max text-white lg:py-[45px] lg:pl-[30px]">
         <h2 className=" leading-[17.26px] uppercase text-[16px] font-bold">Restuarant owners</h2>
         <h1 className=" pb-[15px] leading-[30px] w-[270px] text-[17px] lg:text-[40px] font-bold lg:leading-[50px] lg:w-[300px]">CLAIM YOUR RESTAURANT TODAY!</h1>
