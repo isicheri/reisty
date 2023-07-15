@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../navbar/Navbar.css";
 import Logo from "../../assets/reistynewlogo.svg";
 import Flag from "../../assets/ngflag.svg";
 import Dropdown from "../../assets/dropdownarrow.svg";
@@ -15,7 +16,7 @@ const NavbarDuo = () => {
   };
   return (
     <>
-      <div className="navbar px-[2rem] h-[55px] border-2 justify-between border-b-gray-200 flex items-center lg:gap-6 lg:w-[100%] lg:pl-[4rem] lg:pr[rem] lg:h-[90px] overflow-x-hidden">
+      <div className="navbar px-[2rem] w-full h-[55px] border-2 justify-between border-b-gray-200 flex items-center lg:gap-6 lg:w-[100%] lg:pl-[4rem] lg:pr[rem] lg:h-[90px] overflow-x-hidden">
         <div className="flex gap-8">
           <div className="logo">
             <NavLink to="/">

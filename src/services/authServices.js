@@ -7,7 +7,11 @@ const API_END_POINT= `${BACKEND_URL}/api/auth`;
 
 export const createUser = async(userData) => {
     try {
-        const response = await axios.post(`${API_END_POINT}/create_user`, userData);
+        const response = await axios.post(`${API_END_POINT}/create_user`, userData, {
+            headers: {
+                ApiKey: '4497b48c-ab6f-4f31-8e00-3891923563dc'
+            }
+        });
         toast.success("User successfully created");
         console.log(response.data);
         // return toast.success("Successful");

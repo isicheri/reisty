@@ -1,13 +1,14 @@
 import React from "react";
-import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
+// import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-import { TimePicker } from "@mui/x-date-pickers/TimePicker";
+// import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+// import { TimePicker } from "@mui/x-date-pickers/TimePicker";
 import LocationIcon from "../../assets/locationicon.svg";
 import arrowDown from "../../assets/arrowDown.svg";
 import SearchBar from "../../assets/searchbar.svg";
-import Example from "../countrydropdown/CountryDropdown";
+// import Example from "../countrydropdown/CountryDropdown";
 // import { bgcolor } from "@mui/system";
 // import { red } from "@mui/material/colors";
 // import InputLabel from "@mui/material/InputLabel";
@@ -29,7 +30,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="hero w-full h-full pt-16  pb-10 text-center lg:pt-20 lg:pb-28">
+      <div className="hero  w-full h-full pt-16  pb-10 text-center lg:pt-24 lg:pb-28">
         <div className="text-[30px] leading-[40px] px-7 mx-auto text-center font-bold text-white lg:text-[45px] lg:leading-[50px] lg:w-[745px]">
           <div>
             <div className="h2 lg:pb-[16px]">
@@ -64,45 +65,16 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* <div>
-              <LocalizationProvider dateAdapter={AdapterDayjs}>
-                <DemoContainer sx={{ padding: 0 }} components={["TimePicker"]}>
-                  <TimePicker label="Time" />
-                </DemoContainer>
-              </LocalizationProvider>
-            </div> */}
-
-            <div
-              // onFocus={dropDown}
-              // onBlur={hideDropDown}
-              // tabIndex="0"
-              className="guests min-w-[120px] w-full relative flex flex-col items-start border lg:border-none border-gray-300 lg:rounded-none rounded-md lg:py-0 lg:px-4 lg:mx-0 py-3 px-4 mx-14"
-            >
-              <div className="text-gray-400 text-xs">Date</div>
-              <div className="flex w-full justify-between">
-                {/* <div className="chosenGuest font-semibold text-gray-600 lg:text-sm min-w-max">
-                  Fri,Mar 31
-                </div> */}
-                <Example />
-                <img src={arrowDown} className="-mt-3 w-3" />
-              </div>
-
-              <div
-                // ref={guestDrop}
-                className="allGuests hidden w-full py-2 absolute bg-white min-w-[150px] top-16 lg:top-14 shadow-md border px-1 border-gray-200 shadow-[#00000040] z-30 left-0"
-              >
-                {/* {allNumbers.map((num) => (
-                  <div className="guestChoice py-3 px-1 text-left min-w-max rounded-md cursor-pointer w-full  hover:bg-gray-200">
-                    {num} guest
-                  </div>
-                ))} */}
-              </div>
+            <div>
+              {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
+                <DateCalendar />
+              </LocalizationProvider> */}
             </div>
 
             <div
-              // onFocus={dropDown}
-              // onBlur={hideDropDown}
-              // tabIndex="0"
+              onFocus={dropDown}
+              onBlur={hideDropDown}
+              tabIndex="0"
               className="guests min-w-[120px] w-full relative flex flex-col items-start border lg:border-none border-gray-300 lg:rounded-none rounded-md lg:py-0 lg:px-4 lg:mx-0 py-3 px-4 mx-14"
             >
               <div className="text-gray-400 text-xs">Time</div>
@@ -114,14 +86,14 @@ const Hero = () => {
               </div>
 
               <div
-                // ref={guestDrop}
+                ref={guestDrop}
                 className="allGuests hidden w-full py-2 absolute bg-white min-w-[150px] top-16 lg:top-14 shadow-md border px-1 border-gray-200 shadow-[#00000040] z-30 left-0"
               >
-                {/* {allNumbers.map((num) => (
+                {allNumbers.map((num) => (
                   <div className="guestChoice py-3 px-1 text-left min-w-max rounded-md cursor-pointer w-full  hover:bg-gray-200">
                     {num} guest
                   </div>
-                ))} */}
+                ))}
               </div>
             </div>
 
