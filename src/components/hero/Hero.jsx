@@ -30,7 +30,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="hero  w-full h-full pt-16  pb-10 text-center lg:pt-24 lg:pb-28">
+      <div className="hero  w-full h-full pt-28  pb-10 text-center lg:pt-24 lg:pb-28">
         <div className="text-[30px] leading-[40px] px-7 mx-auto text-center font-bold text-white lg:text-[45px] lg:leading-[50px] lg:w-[745px]">
           <div>
             <div className="h2 lg:pb-[16px]">
