@@ -101,7 +101,7 @@ const NavbarDuo = () => {
       ) : (
        <div className="rxcross">
          <div
-          className=" min-h-full fixed w-full bg-white z-[500] lg:hidden py-8 px-[2rem] overscroll-y-none"
+          className=" hey min-h-full fixed w-full bg-white z-[500] lg:hidden py-8 px-[2rem] overscroll-y-none"
           style={{ border: "" }}
         >
           <ul className="grid gap-6 ">
