@@ -69,8 +69,8 @@ const DiscoverCards = () => {
         </div>
         <Link to = "/">
         <div className="flex gap-2 items-center">
-          <h1 className="text-[#BC172F] font-semibold text-[20px]">See more</h1>
-          <img src={Arrow} alt="" className="pt-2" />
+          <h1 className="text-[#BC172F] font-medium text-[18px]">See more</h1>
+          <img src={Arrow} alt=""  width={15} className="pt-2" />
         </div>
         </Link>
       </div>

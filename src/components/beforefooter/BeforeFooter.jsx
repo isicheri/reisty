@@ -12,7 +12,7 @@ const BeforeFooter = () => {
             Discover the finest restaurants on Reisty
           </h1>
 
-          <p className="text-white text-center lg:text-start lg:w-[559px] text-[14px] lg:text-[16px] font-medium leading-[19px] mt-3">
+          <p className="text-white text-center lg:text-start lg:w-[559px] text-[14px] lg:text-[16px]  leading-[19px] mt-3">
             Download the app now and enjoy seamless restaurant reservations,
             personalized dining experiences, and more. Available on the App
             Store and Google Play Store. Get it today and elevate your dining

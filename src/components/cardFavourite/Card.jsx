@@ -21,8 +21,8 @@ const Card = () => {
 
         <Link to = "/"> 
         <div className="mb-3 flex gap-2 items-center">
-          <h1 className="text-[#BC172F] font-semibold text-[20px]">See more</h1>
-          <img src={Arrow} alt="" srcset="" className=" pt-[6px]" />
+          <h1 className="text-[#BC172F] font-mdium text-[18px]">See more</h1>
+          <img src={Arrow} alt="" srcset="" width={15} className=" pt-[6px]" />
         </div>
         </Link>
       </div>
