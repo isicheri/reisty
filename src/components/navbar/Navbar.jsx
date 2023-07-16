@@ -1,42 +1,117 @@
 import React, { useState } from "react";
+import {  Box, Button,  List,  ListItem,  MenuItem , Typography, } from '@mui/material'
 import Logo from "../../assets/reistynewlogo.svg";
 import Flag from "../../assets/ngflag.svg";
 import Arrow from "../../assets/dropdownarrow.svg";
 // import Searchicon from "../../assets/searchicon.svg";
 import { NavLink, Link } from "react-router-dom";
+import Popover from '@mui/material/Popover';
 import { BiMenu } from "react-icons/bi";
 import { BiSearch } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";
 import "../navbar/Navbar.css";
 import Dropdown from "../../assets/dropdownarrow.svg";
+import { countries } from "../../assets/fonts/Data/Countries";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 
 const Sidebar = () => {
+  const [flag, setFlag] = useState("ng")
+  const [countriesValue, setCountriesValue] = useState("Nigeria")
   const [setNav, isSetNav] = useState(false);
+
+  const handleChangeCountry = (event) => {
+    setCountriesValue(event.target.value);
+    console.log(event.target.value);
+    setAnchorEl(null)
+
+  };
   const ToggleNav = () => {
     isSetNav(!setNav);
   };
+
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
   return (
     <>
       <div className="Navbar flex px-[1.6rem] h-[55px]  lg:border-2 lg:border-b-gray-200 items-center w-full lg:px-[4rem] md:w-full lg:h-fit lg:py-4">
-        <div className="flex flex-1">
+        <div className="flex flex-1" style={{ display:'flex', alignItems:'center', justifyContent:'space-between'}}>
           <div className="flex gap-10 items-center ">
             <div className="logo flex-1 lg:grid">
               <NavLink to="/">
-                <img src={Logo} alt="" />
+                <img src={Logo} alt="" width={80} />
               </NavLink>
             </div>
 
             <div className="navs hidden lg:flex">
-              <div className="country flex items-center gap-3 mr-10 ">
-                <div className="flag">
-                  <img src={Flag} alt="" />
+              <div className="country flex items-center gap-3 mr-10 " style={{alignItems:'center', width:'30%'}}>
+           
+           <Box sx={{display:'flex', alignItems:'center', "& > img": { mr: 2, flexShrink: 0 }}} onClick={handleClick}>
+           <img
+                        loading="lazy"
+                        width="30"
+                        src={`https://flagcdn.com/w20/${flag}.png`}
+                        srcSet={`https://flagcdn.com/w40/${flag}.png 2x`}
+                        alt=""
+                      />
+                      <Typography sx={{fontFamily:'gordita', fontSize:'12px', }}>{countriesValue}</Typography>
+                      <ArrowDropDownIcon/>
+
+           </Box>
+       {/* {
+        countries.map((item)=>(
+          <MenuItem value={`${item.code} ${item.label}`} sx={{fontFamily:'Gordita' , mb:1 , fontSize:'13px', "& > img": { mr: 2, flexShrink: 0 },}}>
+              <img
+                        loading="lazy"
+                        width="20"
+                        src={`https://flagcdn.com/w20/${item.code.toLowerCase()}.png`}
+                        srcSet={`https://flagcdn.com/w40/${item.code.toLowerCase()}.png 2x`}
+                        alt=""
+                      />
+                        {item.label} ({item.code}) 
+          </MenuItem>
+        ))
+       } */}
+             
+
+              {/* <Box
+                      component="li"
+                      sx={{
+                        fontFamily: "Gordita",
+                        borderRadius: "10px",
+                        fontSize: "13px",
+                        "& > img": { mr: 2, flexShrink: 0 },
+                      }}
+                      {...props}
+                    >
+                      <img
+                        loading="lazy"
+                        width="20"
+                        src={`https://flagcdn.com/w20/${option.code.toLowerCase()}.png`}
+                        srcSet={`https://flagcdn.com/w40/${option.code.toLowerCase()}.png 2x`}
+                        alt=""
+                      />
+                      {option.label} ({option.code}) +{option.phone}
+                    </Box> */}
+                {/* <div className="flag">
+                  <img src={Flag} alt="" width={30} />
                 </div>
                 <div className="country lg:flex lg:items-center">
                   <h1>Nigeria</h1>
                 </div>
                 <div className="arrow pt-[7px]">
                   <img src={Arrow} alt="" />
-                </div>
+                </div> */}
               </div>
 
               <div class="search-box mr-36">
@@ -58,7 +133,7 @@ const Sidebar = () => {
                     <div className="search">Bar</div>
                     <div className="search">BBQ</div>
                     <div className="search">Chicken</div>
-                    <div className="search">Coctails</div>
+                    <div className="search">Coctails Bar</div>
                     <div className="search">Burgers</div>
                     <div className="search">Dessert</div>
                     <div className="search">Pizza</div>
@@ -74,13 +149,13 @@ const Sidebar = () => {
 
           <div className="flex items-center gap-8">
             <div className="hidden lg:block">
-              <h1 className="text-[#BC172F] font-medium">For restaurant</h1>
+              <h1 className="text-[#BC172F] font-normal" style={{fontSize:'15px', fontWeight:500}}>For restaurant</h1>
             </div>
 
             <div className="btns hidden lg:flex gap-3">
               <div className="login">
                 <NavLink to="/login">
-                  <button className="py-3 px-8 bg-white ring-1 ring-gray-300 rounded-lg font-semibold text-gray-900">
+                  <button className="py-3 px-6 bg-white ring-1 ring-gray-300 rounded-lg font-normal text-gray-900" style={{fontSize:'14px'}}>
                     Log In
                   </button>
                 </NavLink>
@@ -88,7 +163,7 @@ const Sidebar = () => {
 
               <div className="signup">
                 <NavLink to="/signup">
-                  <button className="py-3 px-7 bg-[#BC172F] rounded-lg text-white font-medium">
+                  <button className="py-3 px-6 bg-[#BC172F] rounded-lg text-white font-normal" style={{fontSize:'14px'}}>
                     Sign Up
                   </button>
                 </NavLink>
@@ -157,7 +232,37 @@ const Sidebar = () => {
           </div>
         </div>
        </div>
+
+       
       )}
+
+<Popover
+        id={id}
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+      >
+     {
+        countries.map((item)=>(
+         
+          <MenuItem onClick={()=>handleChangeCountry(event)} value="Sam" sx={{fontFamily:'Gordita' , mb:1 , fontSize:'13px', "& > img": { mr: 2, flexShrink: 0 },}}>
+              <img
+                        loading="lazy"
+                        width="20"
+                        src={`https://flagcdn.com/w20/${item.code.toLowerCase()}.png`}
+                        srcSet={`https://flagcdn.com/w40/${item.code.toLowerCase()}.png 2x`}
+                        alt=""
+                      />
+                        {item.label} ({item.code}) 
+          </MenuItem>
+  
+        ))
+       } 
+      </Popover>
     </>
   );
 };
