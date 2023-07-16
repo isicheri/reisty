@@ -58,7 +58,7 @@ const Hero = () => {
       <div
         className="hero  w-full pt-28  pb-10 text-center lg:pt-24 lg:pb-28"
         style={{
-          height: "600px",
+          // height: "600px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -109,22 +109,22 @@ const Hero = () => {
               mt: 6,
             }}
           >
-            <Grid container sx={{ display: "flex", alignItems: "center" }}>
-              <Grid item lg={3}>
+            <Grid container spacing={2} sx={{ display: "flex", alignItems: "center" , }}>
+              <Grid item lg={3} md={3} sm={12} xs={12}>
         <Search/>
               </Grid>
-              <Grid item lg={1}>
+              <Grid item  lg={1} md={1} sm={12} xs={12}>
                 <Box
                   sx={{
-                    borderLeft: "1px solid #dadada",
-                    borderRight: "1px solid #dadada",
+                    borderLeft:{lg: "1px solid #dadada",md:'1px solid #dadada', xs:'none'},
+                    borderRight:{lg: "1px solid #dadada",md:'1px solid #dadada', xs:'none'}
                   }}
                 >
              <Location/>
                 </Box>
               </Grid>
-              <Grid item lg={2}>
-                <Box sx={{ borderRight: "1px solid #dadada", px: 1, width:'100%' }}>
+              <Grid item  lg={2} md={2} sm={12} xs={12}>
+                <Box sx={{ borderRight:{lg: "1px solid #dadada",md:'1px solid #dadada', xs:'none'}, px: 1, width:'100%' }}>
           
                     <Box align="left">
                       <Typography
@@ -144,7 +144,7 @@ const Hero = () => {
             
                 </Box>
               </Grid>
-              <Grid item lg={2}>
+              <Grid item  lg={2} md={2} sm={12} xs={12}>
                 <Box sx={{ borderRight: "1px solid #dadada", px: 1 }}>
                     <Box align="left">
                       <Typography
@@ -164,7 +164,7 @@ const Hero = () => {
                 
                 </Box>
               </Grid>
-              <Grid item lg={3}>
+              <Grid item lg={3} md={3} sm={12} xs={12}>
                 <Box sx={{ borderRight: "1px solid #dadada", px: 2 }}>
              
                     <Box align="left" sx={{width:'100%'}}>
@@ -197,7 +197,7 @@ const Hero = () => {
           
                 </Box>
               </Grid>
-              <Grid item lg={1}>
+              <Grid item lg={1} md={1} sm={12} xs={12}>
                 <IconButton>
                   <img src={SearchBar} width={30} />
                 </IconButton>
