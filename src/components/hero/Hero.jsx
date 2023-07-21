@@ -285,13 +285,13 @@ export default Hero;
 //     </div>
 //   </div>
 
-//   <div className="flex gap-3 py-3 lg:py-0 justify-center items-center border lg:rounded-full bg-red-700 border-gray-300  lg:border-none w-full rounded-md lg:w-2/6 lg:ml-8 lg:aspect-square lg:items-center lg:justify-center ">
-//     <img
-//       src={SearchBar}
-//       className="w-[30px] h-[30px] lg:h-[30px] lg:w-[30px] lg:p-1"
-//       alt=""
-//     />
-//     <div className="font-semibold  text-white lg:hidden">Search</div>
-//   </div>
+  // <div className="flex gap-3 py-3 lg:py-0 justify-center items-center border lg:rounded-full bg-red-700 border-gray-300  lg:border-none w-full rounded-md lg:w-2/6 lg:ml-8 lg:aspect-square lg:items-center lg:justify-center ">
+  //   <img
+  //     src={SearchBar}
+  //     className="w-[30px] h-[30px] lg:h-[30px] lg:w-[30px] lg:p-1"
+  //     alt=""
+  //   />
+  //   <div className="font-semibold  text-white lg:hidden">Search</div>
+  // </div>
 // </div>
 // </div>

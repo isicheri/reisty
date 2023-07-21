@@ -4,6 +4,14 @@ body{
   font-family: Gordita !important;
 }
 
+.restaurant-profile-btns{
+  background: rgba(188, 23, 47, 0.10);
+}
+
+.act{
+  border-bottom: 4px solid#BC172F;
+}
+
 .first {
   background-image: url("../assets/bgT.svg");
   background-size: cover;

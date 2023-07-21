@@ -20,7 +20,7 @@ const NavbarDuo = () => {
         <div className="flex gap-8">
           <div className="logo">
             <NavLink to="/">
-              <img src={Logo} alt="" />
+              <img src={Logo} alt="" width={80}/>
             </NavLink>
           </div>
 
