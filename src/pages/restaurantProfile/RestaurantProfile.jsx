@@ -8,18 +8,60 @@ import {
   AiOutlineHeart,
   AiOutlineShareAlt,
 } from "react-icons/ai";
-import React from "react";
+import React, { useContext, useState } from "react";
 import ExperienceProp from "./ExperienceProp";
+import {
+  Tabs,
+  TabsHeader,
+  TabsBody,
+  Tab,
+  TabPanel,
+} from "@material-tailwind/react";
+import AboutRestaurant from "./components/AboutRestaurant";
+import MenuRestaurant from "./components/MenuRestaurant";
+import ReviewRestaurant from "./components/ReviewRestaurant";
+// import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+// import { LocalizationProvider } from '@mui/x-date-pickers-pro/LocalizationProvider';
+import HighlightOffSharpIcon from '@mui/icons-material/HighlightOffSharp';
+import { DialogContext } from "../../App";
+import SelectUi from "./ui/SelectUi";
+import DateRangeComponent from "./ui/DateRangeComponent";
+
+
+
 
 const RestaurantProfile = () => {
+
+  const [activeTab, setActiveTab] = useState("about us")
+  const {showDialog,setShowDialog} = useContext(DialogContext)
+
+
+const data = [
+  {
+    value: "about us",
+    comp: <AboutRestaurant />
+  },
+  {
+    value: "menu",
+    comp: <MenuRestaurant />
+  },
+  {
+    value: "review",
+    comp: <ReviewRestaurant />
+  }
+]
+
+
   return (
     <>
       <div className=" overflow-x-hidden">
+
         <div>
           <Navbar />
         </div>
 
         <div className="w-full mt-6 px-[6rem] ">
+
           <div className=" flex gap-1 items-center">
             <div className="">
               <img src={RectangularGreen} alt="" />
@@ -28,9 +70,18 @@ const RestaurantProfile = () => {
               <img src={DoubleImg} alt="" />
             </div>
           </div>
+
+
+
           <div className="flex items-center mt-4 gap-5">
+
+
             <div className=" flex gap-10 mb-12">
+
+
+
               <div className="w-[67%]">
+
                 <div
                   style={{
                     marginBottom: "2rem",
@@ -62,7 +113,12 @@ const RestaurantProfile = () => {
                     </div>
                   </div>
                 </div>
-                <div
+
+
+           
+
+
+                {/* <div
                   style={{
                     borderBottom: "1px solid #DADADA",
                     marginBottom: "1rem",
@@ -71,34 +127,46 @@ const RestaurantProfile = () => {
                     gap: "40px",
                   }}
                 >
-                  <p className=" act w-fit pb-[23px]">About Us</p>
+                  <p className=" act w-fit pb-[23px] ">About Us</p>
                   <p className=" border-b-[px] w-fit pb-[23px]">Menu</p>
                   <p className=" border-b-[px] w-fit pb-[23px]">Reviews</p>
-                </div>
-                <div className=" mb-[50px] leading-[26px] text-[13px]">
-                  <p>
-                    Orchid Bistro is a contemporary restaurant located in the
-                    heart of Surulere, Lagos. The restaurant's interior design
-                    is inspired by the beauty of orchids, with elegant décor and
-                    soothing colors that create a relaxing atmosphere. Orchid
-                    Bistro's culinary team is dedicated to offering the highest
-                    quality dishes, featuring locally sourced ingredients and
-                    creative flavor combinations. The menu offers a variety of
-                    appetizers, entrees, and desserts, with vegetarian and
-                    gluten-free options available. The restaurant also features
-                    a full-service bar with a carefully curated wine list and
-                    handcrafted cocktails. Whether you're looking for a romantic
-                    dinner or a night out with friends, Orchid Bistro is the
-                    perfect spot for an unforgettable dining experience.{" "}
-                    <span className=" text-[#BC172F]">+More</span>
-                  </p>
-                </div>
-                <div className="flex flex-col gap-[20px]">
-                  <ExperienceProp />
-                  <ExperienceProp />
-                  <ExperienceProp />
-                </div>
+                </div> */}
+
+
+
+              <Tabs value={activeTab}>
+
+                  <TabsHeader  className="rounded-none border-b border-blue-gray-50 bg-transparent p-0"
+        indicatorProps={{
+          className:
+            "bg-transparent border-b-2 border-red-700 shadow-none rounded-none",
+        }}>
+           {data.map(({ value }) => (
+          <Tab
+            key={value}
+            value={value}
+            onClick={() => setActiveTab(value)}
+            className={activeTab === value ? "text-red-700 text-lg pb-5" : "text-lg pb-5"}
+          >
+            {value}
+          </Tab>
+        ))}
+        </TabsHeader>
+
+        <TabsBody>
+        {data.map(({ value, comp }) => (
+          <TabPanel key={value} value={value}>
+            <div className="h-auto">
+              {
+               comp
+              }
+            </div>
+          </TabPanel>
+        ))}
+      </TabsBody>
+              </Tabs>
               </div>
+
 
               <div className="w-[33%]">
                 <div
@@ -153,13 +221,74 @@ const RestaurantProfile = () => {
                 </div>
               </div>
               </div>
+
+
             </div>
+
+
+
           </div>
+
+
+
+
         </div>
 
         <div>
           <Footer />
         </div>
+
+       {showDialog && <div className="fixed inset-0 bg-opacity-50 bg-black z-50 flex justify-center items-center">
+                   
+                   <div className="bg-[#FFFFFF] max-h-[95vh] overflow-y-auto w-1/2 border-2 z-50 rounded-t">
+                
+
+                      <div className="w-full h-36 flex justify-betweeen items-center border-b-2 border-[#DADADA]">
+                            <div className="w-9/12 h-fit text-white p-2">
+                              <div className="border-b-2 border-[#BC172F] mb-4 w-28"> 
+
+                              <p className="text-black text-lg">Reservation</p>
+                              </div>
+                              <h3 className="text-black">Orchidbistro Premium Table</h3>
+                            </div>
+                            <div className="w-1/4 flex justify-end items-center p-5">
+                               <div onClick={() => setShowDialog(false)}>
+                                <HighlightOffSharpIcon fontSize="large"/>
+                               </div>
+                            </div>
+                      </div>
+   
+
+                      <div className="h-[500px] w-full p-6 flex justify-center items-center">
+ 
+                        <div  className="w-full h-[480px] rounded-lg border-2 border-[#DADADA] p-3 flex justify-between items-center flex-col">
+                         <div className="w-full bordder-2 rounded-lg h-[90px] flex justify-center items-center p-2">
+                           <SelectUi />
+                          <SelectUi />
+                         </div>
+                         <div className="w-full h-96 mt-2 rounded-lg">
+                          <DateRangeComponent />
+                         </div>
+                        </div>
+                       
+                      </div>
+
+
+
+                     <div className="w-full h-20 bg-blue-gray-400 flex items-center justify-center">
+                       <div>
+                        
+                       </div>
+                     </div>
+
+                     {/* <div className="w-full h-52 bg-black">
+
+                     </div> */}
+                    
+                   </div>
+
+            </div>}
+
       </div>
     </>
   );

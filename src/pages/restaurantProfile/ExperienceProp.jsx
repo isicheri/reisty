@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DialogContext } from "../../App";
 
 const ExperienceProp = () => {
+  const {setShowDialog} = useContext(DialogContext)
   return (
     <div className="border border-[#DADADA] items-start justify-center flex flex-col px-[41px] gap-[20px] pt-[26px] pb-[26px] rounded-[10px] bg-[#fff]">
       <h1 className=" uppercase font-medium text-[#717171] border-b-[2px] border-b-[#BC172F] pb-1">
@@ -50,7 +52,7 @@ const ExperienceProp = () => {
         </svg>
         <p className=" ">A deposit of ₦8,500 is required per person.</p>
       </div>
-      <button className=" bg-[#BC172F] rounded-[10px] py-[16px] px-[23px] text-[17px] font-medium text-[#fff]">
+      <button className=" bg-[#BC172F] rounded-[10px] py-[16px] px-[23px] text-[17px] font-medium text-[#fff]" onClick={() => setShowDialog(true)}>
         Book Now
       </button>
     </div>
