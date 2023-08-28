@@ -16,59 +16,45 @@ const NavbarDuo = () => {
   };
   return (
     <>
-      <div className="navbar px-[2rem] w-full h-[55px] border-2 justify-between border-b-gray-200 flex items-center lg:gap-6 lg:w-[100%] lg:pl-[4rem] lg:pr[rem] lg:h-[90px] overflow-x-hidden">
-        <div className="flex gap-8">
+      <div className="navbar sticky top-0 bg-white px-5 w-full py-3  border-2 justify-between border-b-gray-200 flex items-center lg:gap-6 lg:w-[100%] lg:px-14 h-[65px] overflow-hidden">
+        <div className="flex items-center gap-8">
           <div className="logo">
             <NavLink to="/">
               <img src={Logo} alt="" width={80}/>
             </NavLink>
           </div>
 
-          <div className="navs hidden lg:flex">
-          <div className="country flex items-center gap-3 mr-10">
+          <div className="navs hidden lg:flex items-center">
+          <div className="country flex items-center gap-3 mr-10 cursor-pointer hover:bg-gray-50 p-3 rounded-md
+          ">
             <div className="flag">
-              <img src={Flag} alt="" />
+              <img src={Flag} width={25} alt="" />
             </div>
-            <div className="country lg:flex lg:items-center">
+            <div className="country lg:flex lg:items-center items-center gap-2 text-sm">
               <h1>Nigeria</h1>
-            </div>
-            <div className="arrow pt-[7px]">
+            <div className="arrow ">
               <img src={Arrow} alt="" />
+            </div>
             </div>
           </div>
         </div>
-
-          <div className="search hidden px-5 py-3 mr-20 gap-2 rounded-3xl ring-1 ring-gray-300 lg:hidden">
-            <img src={Searchicon} alt="" />{" "}
-            <span>
-              <input
-                type="text"
-                placeholder="Search restaurants, cuisines or experience"
-                className="w-[300px] outline-none text-[16px]"
-              />
-            </span>
-          </div>
         </div>
 
         <div className='flex gap-8 items-center mr-12'>
         <div className='hidden lg:flex'>
-          <h1 className="text-[#BC172F] font-medium mr-4">For restaurant</h1>
+          <h1 className="text-[#BC172F] text-sm font-medium mr-4">For restaurant</h1>
         </div>
 
-        <div className="btns lg:flex gap-4 hidden">
+        <div className="btns lg:flex items-center gap-4 hidden">
           <div className="login">
-            <NavLink to="/login">
-              <button className="py-3 px-8 bg-white ring-1 ring-gray-300 rounded-lg font-semibold text-gray-900">
+            <NavLink className="py-3 px-6 bg-white ring-1 ring-gray-300 text-sm rounded-md font-semibold text-gray-900" to="/login">
                 Log In
-              </button>
             </NavLink>
           </div>
 
         <div className="signup">
-            <NavLink to="/signup">
-              <button className="py-3 px-7 bg-[#BC172F] rounded-lg text-white font-medium">
-                Sign Up
-              </button>
+            <NavLink className="py-3 px-6 bg-[#BC172F] rounded-md text-sm text-white font-medium" to="/signup">
+                Sign up
             </NavLink>
           </div>
         </div>
@@ -76,20 +62,20 @@ const NavbarDuo = () => {
 
         <div className="flex items-center lg:hidden">
           <div className="hidden">
-            <BiSearch className="text-[#BC172F] text-[36px] pr-[7px]" />
+            <BiSearch className="text-[#BC172F] text-[35px] pr-[7px]" />
           </div>
 
           <div>
             {!setNav ? (
               <BiMenu
-                className="text-[#BC172F] text-[45px]"
+                className="text-[#BC172F] text-[35px]"
                 onClick={ToggleNav}
               />
             ) : (
               <RxCross2
-                color="#BC172F"
+                color="#BC172F" width={20}
                 onClick={ToggleNav}
-                className="items-center w-10 h-10"
+                className="items-center w-[30px] h-[30px]"
               />
             )}
           </div>
@@ -99,9 +85,9 @@ const NavbarDuo = () => {
       {!setNav ? (
         ""
       ) : (
-       <div className="rxcross">
+       <div className="rxcross fixed w-full bg-white overflow-y-scroll">
          <div
-          className=" hey min-h-full fixed w-full bg-white z-[500] lg:hidden py-8 px-[2rem] overscroll-y-none"
+          className=" hey w-full bg- z-[500] lg:hidden py-8 px-[2rem]"
           style={{ border: "" }}
         >
           <ul className="grid gap-6 ">
@@ -140,4 +126,7 @@ const NavbarDuo = () => {
   );
 };
 
+// const NavbarDuo = () => {
+//   return ""
+// }
 export default NavbarDuo;

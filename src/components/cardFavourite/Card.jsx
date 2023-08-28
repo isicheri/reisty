@@ -8,27 +8,27 @@ import Arrow from "../../assets/seemorearrow.svg";
 import { NavLink , Link } from "react-router-dom";
 const Card = () => {
   return (
-    <div className="px-5 lg:px-16  mt-14 " style={{backgroundColor: ""}}>
-      <div className="lg:pb-6 lg:flex lg:items-center lg:pr-6">
+    <div className="px-5 md:px-14 lg:px-16 w-full mt-14 " style={{backgroundColor: ""}}>
+      <div className="lg:pb-6 flex items-center justify-between w-full lg:pr-6">
         <div className="lg:flex-1">
-          <h1 className="text-[20px] lg:text-[24px] font-semibold">
+          <h1 className="text-md font-semibold">
             Featured Restaurants
           </h1>
-          <p className="pb-4 text-[14px] lg:text-[16px] font-normal text-[#2B2B2B]">
+          <p className="pb-4 text-[14px] md:mt-1 font-normal text-[#2B2B2B] text-xs">
             Discover the best restaurants in your local area
           </p>
         </div>
 
         <Link to = "/"> 
         <div className="mb-3 flex gap-2 items-center">
-          <h1 className="text-[#BC172F] font-mdium text-[18px]">See more</h1>
-          <img src={Arrow} alt="" srcset="" width={15} className=" pt-[6px]" />
+          <h1 className="text-redd font-medium text-xs md:text-sm">See more</h1>
+          <img src={Arrow} alt="" srcset="" width={15} className="" />
         </div>
         </Link>
       </div>
 
       <div className=" flex flex-col">
-        <div className=" flex flex-row overflow-x-scroll min-h-max lg:grid lg:grid-cols-4 lg:overflow-hidden lg:h-max gap-1 pb-4 mb-4">
+        <div className="flex flex-row overflow-x-scroll min-h-max lg:grid gap-4 lg:grid-cols-4 pb-4 mb-10">
         <Cardprops
           image={Imgbrown}
           id="1"          

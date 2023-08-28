@@ -30,15 +30,15 @@ export default function TextRating() {
       <Rating
       sx={{
         color:"#BC172F",
-        fontSize: '20px',
+        fontSize: '15px',
       }}
         name="text-feedback"
         value={value}
         readOnly
         precision={0.5}
-        emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
+        emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="15px" />}
       />
-      <Box sx={{ ml: 0.5, fontSize: '14px', fontWeight:'350' }}>{labels[value]}</Box>
+      <Box sx={{ ml: 0.5, fontSize: '12px', fontWeight:'350' }}>{labels[value]}</Box>
     </Box>
   );
 }

@@ -33,7 +33,7 @@
   } */
   
   .hovshade:hover{
-    box-shadow: 10px 10px #BC172F;
+    box-shadow: 6px 6px #BC172F;
     /* background-color: red; */
   }
   .hovshade{

@@ -56,7 +56,7 @@ const Hero = () => {
   return (
     <>
       <div
-        className="hero  w-full pt-28  pb-10 text-center lg:pt-24 lg:pb-28"
+        className="hero w-full pt-28  pb-10 text-center lg:pt-24 lg:pb-28"
         style={{
           // height: "600px",
           display: "flex",
@@ -70,7 +70,7 @@ const Hero = () => {
               <h2
                 className=" text-[30px] lg:text-[38px]"
                 style={{
-                  fontFamily: "Gordita",
+                  fontFamily: "Gordita, sans-serif",
                   fontSize: "40px",
                   marginTop: "0px",
                 }}
@@ -83,9 +83,9 @@ const Hero = () => {
               <p
                 className=" leading-[22px] font-medium text-center pt-[15px] lg:w-[839px] pb-1 lg:text-[16px]"
                 style={{
-                  fontFamily: "Gordita",
+                  fontFamily: "Gordita, sans-serif",
                   fontWeight: 400,
-                  fontSize: "14px",
+                  fontSize: "12px",
                 }}
               >
                 Browse through a wide selection of restaurants and effortlessly
@@ -103,98 +103,100 @@ const Hero = () => {
               bgcolor: "#fff",
               margin: "0 auto",
               width: "70%",
-              p: 1,
+              // p: 1,
               px: 3,
               borderRadius: "20px",
               mt: 6,
             }}
           >
-            <Grid container spacing={2} sx={{ display: "flex", alignItems: "center" , }}>
+            <Grid container spacing={2} sx={{ display: "flex", alignItems: "center", }}>
               <Grid item lg={3} md={3} sm={12} xs={12}>
-        <Search/>
+                <Search />
               </Grid>
-              <Grid item  lg={1} md={1} sm={12} xs={12}>
+              <Grid item lg={1} md={1} sm={12} xs={12}>
                 <Box
                   sx={{
-                    borderLeft:{lg: "1px solid #dadada",md:'1px solid #dadada', xs:'none'},
-                    borderRight:{lg: "1px solid #dadada",md:'1px solid #dadada', xs:'none'}
+                    borderLeft: { lg: "1px solid #dadada", md: '1px solid #dadada', xs: 'none' },
+                    borderRight: { lg: "1px solid #dadada", md: '1px solid #dadada', xs: 'none' }
                   }}
                 >
-             <Location/>
+                  <Location />
                 </Box>
               </Grid>
-              <Grid item  lg={2} md={2} sm={12} xs={12}>
-                <Box sx={{ borderRight:{lg: "1px solid #dadada",md:'1px solid #dadada', xs:'none'}, px: 1, width:'100%' }}>
-          
-                    <Box align="left">
-                      <Typography
-                        sx={{
-                          fontFamily: "Gordita",
-                          fontWeight: 200,
-                          fontSize: "12px",
-                          color: "#717171",
-                        }}
-                      >
-                        {" "}
-                        Date
-                      </Typography>
-        <Date/>
-              
-                    </Box>
-            
+              <Grid item lg={2} md={2} sm={12} xs={12}>
+                <Box sx={{ borderRight: { lg: "1px solid #dadada", md: '1px solid #dadada', xs: 'none' }, px: 1, width: '100%' }}>
+
+                  <Box align="left">
+                    <Typography
+                      sx={{
+                        fontFamily: "Gordita, sans-serif",
+                        fontWeight: 200,
+                        fontSize: "12px",
+                        color: "#717171",
+                      }}
+                    >
+                      {" "}
+                      Date
+                    </Typography>
+                    <Date />
+
+                  </Box>
+
                 </Box>
               </Grid>
-              <Grid item  lg={2} md={2} sm={12} xs={12}>
+              <Grid item lg={2} md={2} sm={12} xs={12}>
                 <Box sx={{ borderRight: "1px solid #dadada", px: 1 }}>
-                    <Box align="left">
-                      <Typography
-                        sx={{
-                          fontFamily: "Gordita",
-                          fontWeight: 200,
-                          fontSize: "12px",
-                          color: "#717171",
-                        }}
-                      >
-                        {" "}
-                        Time
-                      </Typography>
-                 <Time/>
-                    </Box>
-                  
-                
+                  <Box align="left">
+                    <Typography
+                      sx={{
+                        fontFamily: "Gordita, sans-serif",
+                        fontWeight: 200,
+                        fontSize: "12px",
+                        color: "#717171",
+                      }}
+                    >
+                      {" "}
+                      Time
+                    </Typography>
+                    <Time />
+                  </Box>
+
+
                 </Box>
               </Grid>
               <Grid item lg={3} md={3} sm={12} xs={12}>
                 <Box sx={{ borderRight: "1px solid #dadada", px: 2 }}>
-             
-                    <Box align="left" sx={{width:'100%'}}>
-                      <Typography
-                        sx={{
-                          fontFamily: "Gordita",
-                          fontWeight: 200,
-                          fontSize: "12px",
-                          color: "#717171",
-                        }}
-                      >
-                        Guest size
-                      </Typography>
-               
-                   
-                      <Select      value={guest}
-          onChange={handleChangeGuest} variant="standard" fullWidth sx={{border:'0px solid',  fontFamily:'Gordita', fontWeight:400, fontSize:'14px', '& .MuiOutlinedInput-root':{
-                        borderColor: 'transparent',
-                      }}} size="small"  >
-                        <MenuItem sx={{fontFamily:'Gordita', fontSize:'13px', mb:1}} value="1 guest">1 guest</MenuItem>
-                        <MenuItem sx={{fontFamily:'Gordita', fontSize:'13px', mb:1}} value="2 guest"> 2 guest</MenuItem>
-                        <MenuItem sx={{fontFamily:'Gordita', fontSize:'13px', mb:1}} value="3 guest">3 guest</MenuItem>
-                        <MenuItem sx={{fontFamily:'Gordita', fontSize:'13px', mb:1}} value="4 guest">4 guest</MenuItem>
-                        <MenuItem sx={{fontFamily:'Gordita', fontSize:'13px', mb:1} } value="5 guest">5 guest</MenuItem>
-                        <MenuItem sx={{fontFamily:'Gordita', fontSize:'13px', mb:1}} value="6 and above">6 and above</MenuItem>
-                      </Select>
-                    
-                    </Box>
-                    {/* <ArrowDropDownIcon sx={{ color: "#333", ml: "auto" }} /> */}
-          
+
+                  <Box align="left" sx={{ width: '100%' }}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Gordita, sans-serif",
+                        fontWeight: 200,
+                        fontSize: "12px",
+                        color: "#717171",
+                      }}
+                    >
+                      Guest size
+                    </Typography>
+
+
+                    <Select value={guest}
+                      onChange={handleChangeGuest} variant="standard" fullWidth sx={{
+                        border: '0px solid', fontFamily: 'Gordita, sans-serif', fontWeight: 400, fontSize: '14px', '& .MuiOutlinedInput-root': {
+                          borderColor: 'transparent',
+                        }
+                      }} size="small"  >
+                      <MenuItem sx={{ fontFamily: 'Gordita, sans-serif', fontSize: '13px', mb: 1 }} value="1 guest">1 guest</MenuItem>
+                      <MenuItem sx={{ fontFamily: 'Gordita, sans-serif', fontSize: '13px', mb: 1 }} value="2 guest"> 2 guest</MenuItem>
+                      <MenuItem sx={{ fontFamily: 'Gordita, sans-serif', fontSize: '13px', mb: 1 }} value="3 guest">3 guest</MenuItem>
+                      <MenuItem sx={{ fontFamily: 'Gordita, sans-serif', fontSize: '13px', mb: 1 }} value="4 guest">4 guest</MenuItem>
+                      <MenuItem sx={{ fontFamily: 'Gordita, sans-serif', fontSize: '13px', mb: 1 }} value="5 guest">5 guest</MenuItem>
+                      <MenuItem sx={{ fontFamily: 'Gordita, sans-serif', fontSize: '13px', mb: 1 }} value="6 and above">6 and above</MenuItem>
+                    </Select>
+
+                  </Box>
+                  {/* <ArrowDropDownIcon sx={{ color: "#333", ml: "auto" }} /> */}
+
                 </Box>
               </Grid>
               <Grid item lg={1} md={1} sm={12} xs={12}>
@@ -285,13 +287,13 @@ export default Hero;
 //     </div>
 //   </div>
 
-  // <div className="flex gap-3 py-3 lg:py-0 justify-center items-center border lg:rounded-full bg-red-700 border-gray-300  lg:border-none w-full rounded-md lg:w-2/6 lg:ml-8 lg:aspect-square lg:items-center lg:justify-center ">
-  //   <img
-  //     src={SearchBar}
-  //     className="w-[30px] h-[30px] lg:h-[30px] lg:w-[30px] lg:p-1"
-  //     alt=""
-  //   />
-  //   <div className="font-semibold  text-white lg:hidden">Search</div>
-  // </div>
+// <div className="flex gap-3 py-3 lg:py-0 justify-center items-center border lg:rounded-full bg-red-700 border-gray-300  lg:border-none w-full rounded-md lg:w-2/6 lg:ml-8 lg:aspect-square lg:items-center lg:justify-center ">
+//   <img
+//     src={SearchBar}
+//     className="w-[30px] h-[30px] lg:h-[30px] lg:w-[30px] lg:p-1"
+//     alt=""
+//   />
+//   <div className="font-semibold  text-white lg:hidden">Search</div>
+// </div>
 // </div>
 // </div>

@@ -16,9 +16,9 @@ const Date = () => {
 <LocalizationProvider dateAdapter={AdapterDayjs}>
      
         <DatePicker
-        // disablePast={true}
+        disablePast={true}
         variant="standard"
-          views={[ 'month', 'day']}
+          views={["year", 'month', 'day']}
           value={value}
           onChange={(newValue) => setValue(newValue)}
           slotProps={{
@@ -26,14 +26,14 @@ const Date = () => {
              variant:'standard',
              sx:{
               fontFamily: "Gordita",
+              fontSize: "12px"
              }
             },
           }}
           renderInput={(params) => <TextField {...params} variant="standard"      InputProps={{
             style: {
               fontFamily: "Gordita",
-              fontSize: "13px",
-              borderRadius: "10px",
+              fontSize: "12px",
               offset: " 1px solid #737373",
               // Replace with your desired font family
             },

@@ -11,10 +11,17 @@ export default withMT({
   theme: {
     extend: {
       boxShadowlogin: {
-        'blg': '0px 8px 10px 10px rgba(211,211,211);',
+        'blg': '0px 8px 10px 10px rgba(211,211,211, .5);',
       },
-      boxShadow: {
-        'lg': '8px 8px 2px 1px rgba(255, 0, 0);',
+      // boxShadow: {
+      //   'lg': '8px 8px 2px 1px rgba(255, 0, 0);',
+      // },
+      fontSize: {
+        "xxs": "0.65rem",
+      },
+      colors: {
+        "redd": "#BC172F",
+        "dark": "#941427",
       },
     },
   },

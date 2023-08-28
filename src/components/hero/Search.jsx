@@ -1,126 +1,42 @@
-import React from "react";
-import {
-  Box,
-  TextField,
-  Typography,
-  InputAdornment,
-  Chip,
-  Stack,
-} from "@mui/material";
-import Popover from "@mui/material/Popover";
-import SearchIcon from "@mui/icons-material/Search";
+import React from "react"
+import searchGray from "../../assets/search-icon.svg"
 
 const Search = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  let searchInput = React.useRef()
 
-  const [searchValue, setSearchValue] = React.useState("Cuisines, restuarants");
+  function focusSearch() {
+    searchInput.current.focus()
+  }
+  const [keyWord, setKeyword] = React.useState("Cuisines, restaurant")
+  const [today, setDay] = React.useState("2020-01-01")
+  const [maxDate, setmaxDay] = React.useState("2040-01-01")
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+  let SearchSugs = ["Dinary", "Restaurants", "Cuisines"]
 
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  const open = Boolean(anchorEl);
-  const id = open ? "simple-popover" : undefined;
   return (
     <>
-      <Box align="left" onClick={handleClick}>
-        <Typography
-          sx={{
-            fontFamily: "Gordita",
-            fontWeight: 200,
-            fontSize: "12px",
-            color: "#717171",
-          }}
-        >
-          {" "}
-          Search
-        </Typography>
-        <Typography
-          sx={{
-            fontFamily: "Gordita",
-            fontWeight: 400,
-            fontSize: "14px",
-            color: "#555",
-          }}
-        >
-          {" "}
-          {searchValue}
-        </Typography>
-      </Box>
-      <Popover
-        id={id}
-        open={open}
-        anchorReference="anchorPosition"
-        anchorPosition={{ top: 500, left: 220 }}
-        anchorEl={anchorEl}
-        onClose={handleClose}
-        anchorOrigin={{
-          vertical: "bottom",
-          horizontal: "left",
-        }}
-      >
-        <Box sx={{ width: "360px", py: 3, px: 2, borderRadius: "20px" }}>
-          <TextField
-            fullWidth
-            value={searchValue}
-            onChange={(e) => setSearchValue(e.target.value)}
-            size="large"
-            placeholder="Search restaurant, cuisines"
-            InputProps={{
-              style: {
-                fontFamily: "Gordita",
-                fontSize: "13px",
-                borderRadius: "20px",
-                offset: " 1px solid #737373",
-                // Replace with your desired font family
-              },
-              startAdornment: (
-                <InputAdornment position="start">
-                  <SearchIcon />
-                </InputAdornment>
-              ),
-            }}
-          />
 
-          <Box sx={{ mt: 4 }}>
-            <Stack direction="row" spacing={1}>
-              <Chip
-                label="Dinery"
-                variant="outlined"
-                onClick={() =>{
-                    setSearchValue("Dinery")
-                   setAnchorEl(null)
-                  }}
-                sx={{ fontFamily: "Gordita" }}
-              />
-              <Chip
-              onClick={() =>{
-                setSearchValue("Restaurants")
-               setAnchorEl(null)
-              }}
-                label="Restaurants"
-                variant="outlined"
-                sx={{ fontFamily: "Gordita" }}
-              />
-              <Chip
-               onClick={() =>{
-                 setSearchValue("Cuisines")
-                setAnchorEl(null)
-               }}
-                label="Cuisines"
-                variant="outlined"
-                sx={{ fontFamily: "Gordita" }}
-              />
-            </Stack>
-          </Box>
-        </Box>
-      </Popover>
+      <div onClick={focusSearch} tabIndex={0} className="searchWord relative w-full border outline-none rounded-md p-2 mb-2 md:mb-0 md:border-0 md:rounded-none md:p-0 px-6 text-xs flex flex-col items-start">
+        <p className="text-xxs text-gray-500">Search</p>
+        <p spellCheck={false} className="Keyword text-left md:w-[150px] overflow-clip text-ellipsis font-medium leading-relaxed outline-none empty:before:content-['Find_by_key_word']  before:content-none
+">{keyWord}</p>
+
+        <div className="heroSearchSug absolute duration-150 opacity-0 max-h-0 bg-white top-14 left-0 md:-left-4 rounded-md p-5 z-10 border shadow-lg md:w-max w-full">
+
+          <div className="searchBar flex items-center gap-2 border p-2 py-3 w-full rounded-full bg-white duration-100 z-10 focus-within:border-gray-400">
+            <img draggable={false} src={searchGray} alt="reisty" className="w-4 shrink-0 ml-2" />
+            <input ref={searchInput} onChange={e => { setKeyword(e.target.value) }} type="text" placeholder="Search restaurants, cuisines" className="text-xs w-full outline-none h-full" />
+          </div>
+          <div className="SearchSugs py-5 w-full max-h-30 flex flex-wrap max-w-[340px] gap-2">
+            {SearchSugs.map(word => (
+              <div key={word} className="searchWord border cursor-pointer w-max whitespace-nowrap text-center text-xxs p-2 px-4 hover:bg-gray-50 bg-white rounded-md shrink-0 grow-0">{word}</div>
+            ))}
+          </div>
+
+        </div>
+      </div>
     </>
-  );
-};
+  )
+}
 
 export default Search;

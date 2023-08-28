@@ -159,7 +159,7 @@ const Location = () => {
     <>
 
       <IconButton onClick={handleOpen}>
-        <img src={LocationIcon} />
+        <img className="h-[55px] px-1 " src={LocationIcon} />
       </IconButton>
 
       <Modal

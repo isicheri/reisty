@@ -23,66 +23,69 @@ const initialState = {
 }
 const SignUp = () => {
   const [formData, setFormData] = useState(initialState);
-  const {firstName, lastName, emailAddress, phoneNumber, country, password, confirmPassword} = formData;
-  
+  const { firstName, lastName, emailAddress, phoneNumber, country, password, confirmPassword } = formData;
+
   const handleInputChange = (e) => {
-    const {name, value} = e.target;
-    setFormData({...formData, [name]: value});
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   }
 
-  const createNewUser = async(e)=>{
+  const createNewUser = async (e) => {
     e.preventDefault();
-    if(!firstName){
+    if (!firstName) {
       return toast.error("First Name is required");
-    } 
+    }
 
-    if(!lastName){
+    if (!lastName) {
       return toast.error("Last Name is required");
     }
 
-    if(!emailAddress){
+    if (!emailAddress) {
       return toast.error("Email Address is required");
     }
-    if(!phoneNumber){
+    if (!phoneNumber) {
       return toast.error("Phone Number is required");
     }
-    if(!country){
+    if (!country) {
       return toast.error("country is required");
     }
-    if(!password){
+    if (!password) {
       return toast.error("Password is required");
     }
-    if(!confirmPassword){
+    if (!confirmPassword) {
       return toast.error("Confirm password is required");
     }
-   try {
-    const userData = {
-      firstName,
-      lastName,
-      emailAddress,
-      phoneNumber,
-      country,
-      password,
-      confirmPassword
-    }
+    try {
+      const userData = {
+        firstName,
+        lastName,
+        emailAddress,
+        phoneNumber,
+        country,
+        password,
+        confirmPassword
+      }
 
-   const save = await createUser(userData);
-   toast.success(save.status)
-   } catch (error) {
-    toast.error(error)
-   }
+      const save = await createUser(userData);
+      toast.success(save.status)
+    } catch (error) {
+      toast.error(error)
+    }
   }
   return (
     <div>
       <NavbarDuo />
-      <div className="bg-white min-h-screen">
-        <div className="mx-auto w-full overflow-x-hiddenhidden lg:max-w-[45%] pt-16 lg:mb-28">
-          <div className="bg-white shadow-2xl rounded px-[2rem] lg:px-28 lg:pt-8 lg:pb-8 lg:mb-4">
+      <div className="bg-white min-h-[100vh] md:flex items-center justify-center">
+        <div className="mx-auto w-full max-w-[600px] md:py-12 lg:py-16 lg:px-14">
+          <div className="bg-white shadow-2xl rounded px-[2rem] pt-6 md:py-8 lg:mb-4">
             <div className="flex justify-center pb-6">
               <img src={LogoT} alt="" />
             </div>
-            <div className="text-center flex justify center pb-6">
-              <p>
+            <div className="text-center flex flex-col items-center w-full justify-center text-[#2b2b2b] center pb-6 text-sm md:">
+              <p className="text-2xl md:text-3xl font-bold md:my-2">
+                Sign up for Reisty.
+              </p>
+              <p className="px-3 py-2">
                 Your account information and reservations are securely managed
                 by Reisty.
               </p>
@@ -90,170 +93,125 @@ const SignUp = () => {
             <div className="mb-4 grid grid-cols-1 gap-3 w-[90%] mx-auto justify-center">
               <button className="border border-gray-300 rounded-3xl justify-center py-3 px-2 flex items-center">
                 <img src={FacebookIcon} className="mr-2 w-4 h-4" />
-                Log in with Facebook
+                <span className="w-[200px]">Log in with Facebook</span>
               </button>
               <button className="border border-gray-300 rounded-3xl justify-center py-3 px-2 flex items-center">
                 <img src={GoogleIcon} className="mr-2 w-4 h-4" />
-                Log in with Google
+                <span className="w-[200px]">Log in with Google</span>
               </button>
               <button className="border rounded-3xl justify-center py-3 px-2 flex items-center">
                 <img src={AppleIcon} className="mr-2 w-4 h-4" />
-                Log in with Apple
+                <span className="w-[200px]">Log in with Apple</span>
               </button>
             </div>
 
-            <div className="twodash flex justify-center mb-6 mt-6 gap-2 items-center">
-              <div className="dashone border-b-2 border-black-100 w-[150px]"></div>
-              <div className="or">Or</div>
-              <div className="dashtwo border-b-2 border-black-100 w-[150px]"></div>
+            <div className="twodash flex justify-center my-8 gap-2 items-center">
+              <div className="dashone border-b-2 border-black-100 w-full"></div>
+              <div className="or px-2 text-sm">Or</div>
+              <div className="dashtwo border-b-2 border-black-100 w-full"></div>
             </div>
 
             <form onSubmit={createNewUser} className=" justify-center">
-              <div className="mb-4 w-[100%] justify-center">
+
+              <div className="inputBox mb-4 w-[100%] justify-center relative ">
                 <label
-                  className="block py-3 text-gray-700 font-medium mb-2"
-                  htmlFor="firstname"
+                  className="block text-gray-700 text-sm font-medium mb-2 absolute bg-white ml-5 -mt-2 px-3 top-0"
+                  htmlFor="username"
                 >
-                  First Name
+                  First name
                 </label>
                 <input
-                  className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  // id="firstname"
-                  name="firstName"
+                  className="shadow-md shadow-[#cccccc20] appearance-none border rounded-md w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4 mb-3 duration-100 focus:border-redd"
+                  id="username"
                   type="text"
-                  placeholder="First Name"
-                  value={firstName}
-                  onChange={handleInputChange}
+                  placeholder=""
                 />
-
+              </div>
+              <div className="inputBox mb-4 w-[100%] justify-center relative ">
                 <label
-                  className="block py-3 text-gray-700 font-medium mb-2"
+                  className="block text-gray-700 text-sm font-medium mb-2 absolute bg-white ml-5 -mt-2 px-3 top-0"
                   htmlFor="lastname"
                 >
-                  Last Name
+                  Last name
                 </label>
                 <input
-                  className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  name="lastName"
-                  value={lastName}
-                  onChange={handleInputChange}
+                  className="shadow-md shadow-[#cccccc20] appearance-none border rounded-md w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4 mb-3 duration-100 focus:border-redd"
+                  id="lastname"
                   type="text"
-                  placeholder="Last Name"
+                  placeholder=""
                 />
-
+              </div>
+              <div className="inputBox mb-4 w-[100%] justify-center relative ">
                 <label
-                  className="block py-3 text-gray-700 font-medium mb-2"
+                  className="block text-gray-700 text-sm font-medium mb-2 absolute bg-white ml-5 -mt-2 px-3 top-0"
                   htmlFor="email"
                 >
                   Email address
                 </label>
                 <input
-                  className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  // id="email"
-                  name="emailAddress"
-                  value={emailAddress}
-                  onChange={handleInputChange}
-                  type="text"
-                  placeholder="Email address"
+                  className="shadow-md shadow-[#cccccc20] appearance-none border rounded-md w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4 mb-3 duration-100 focus:border-redd"
+                  id="email"
+                  type="email"
+                  placeholder=""
                 />
-
+              </div>
+              <div className="inputBox mb-4 w-[100%] justify-center relative ">
                 <label
-                  className="block py-3 text-gray-700 font-medium mb-2"
-                  htmlFor="phonenumber"
+                  className="block text-gray-700 text-sm font-medium mb-2 absolute bg-white ml-5 -mt-2 px-3 top-0"
+                  htmlFor="phone"
                 >
-                  Phone Number
+                  Phone number
                 </label>
                 <input
-                  className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  // id="username"
-                  name="phoneNumber"
-                  value={phoneNumber}
-                  onChange={handleInputChange}
-                  type="text"
-                  placeholder="Phone Number"
+                  className="shadow-md shadow-[#cccccc20] appearance-none border rounded-md w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4 mb-3 duration-100 focus:border-redd"
+                  id="phone"
+                  type="tel"
+                  placeholder=""
                 />
-
+              </div>
+              <div className="inputBox mb-4 w-[100%] justify-center relative ">
                 <label
-                  className="block py-3 text-gray-700 font-medium mb-2"
+                  className="block text-gray-700 text-sm font-medium mb-2 absolute bg-white ml-5 -mt-2 px-3 top-0"
                   htmlFor="country"
                 >
-                  Country of Residence
+                  Country of residence
                 </label>
                 <input
-                  className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  // id="country"
-                  name="country"
-                  value={country}
-                  onChange={handleInputChange}
+                  className="shadow-md shadow-[#cccccc20] appearance-none border rounded-md w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4 mb-3 duration-100 focus:border-redd"
+                  id="country"
                   type="text"
-                  placeholder="Country of resisdence"
+                  placeholder=""
                 />
-
+              </div>
+              <div className="inputBox mb-4 w-[100%] justify-center relative ">
                 <label
-                  className="block py-3 text-gray-700 font-medium mb-2"
-                  htmlFor="password"
+                  className="block text-gray-700 text-sm font-medium mb-2 absolute bg-white ml-5 -mt-2 px-3 top-0"
+                  htmlFor="pword"
                 >
-                  Password
+                  New Password
                 </label>
                 <input
-                  className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  // id="password"
-                  name="password"
-                  value={password}
-                  onChange={handleInputChange}
-                  type="password"
-                  placeholder="Password"
+                  className="shadow-md shadow-[#cccccc20] appearance-none border rounded-md w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4 mb-3 duration-100 focus:border-redd"
+                  id="pword"
+                  type="text"
+                  placeholder=""
                 />
-
-<label
-                  className="block py-3 text-gray-700 font-medium mb-2"
-                  htmlFor="password"
+              </div>
+              <div className="inputBox mb-4 w-[100%] justify-center relative ">
+                <label
+                  className="block text-gray-700 text-sm font-medium mb-2 absolute bg-white ml-5 -mt-2 px-3 top-0"
+                  htmlFor="confirm"
                 >
-                Confirm Password
+                  Confirm password
                 </label>
                 <input
-                  className="shadow appearance-none border rounded-xl w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4"
-                  // id="password"
-                  name="confirmPassword"
-                  value={confirmPassword}
-                  onChange={handleInputChange}
-                  type="password"
-                  placeholder/>
+                  className="shadow-md shadow-[#cccccc20] appearance-none border rounded-md w-full py-4 px-1 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-4 mb-3 duration-100 focus:border-redd"
+                  id="confirm"
+                  type="text"
+                  placeholder=""
+                />
               </div>
 
-              <div>
-                <p className=" font-normal text-[14px] leading-5 text-[#808080]">
-                  By clicking the 'Create Account' button below, you agree to
-                  the Reisty{" "}
-                  <span className="text-[#BC172F] font-medium">
-                    Terms of Use
-                  </span>{" "}
-                  and{" "}
-                  <span className="text-[#BC172F] font-medium">
-                    Privacy Policy
-                  </span>
-                  .
-                </p>
-              </div>
-
-              <div className="flex items-center pt-8 justify-between">
-                <button
-                  className="bg-red-700 text-white w-[100%] font-normal py-4 px-3 rounded-xl focus:outline-none focus:shadow-outline"
-                  type="submit"
-                >
-                  Create account
-                </button>
-              </div>
-              <div className=" mt-2 pb-4 lg:mt-0 lg:pb-0 lg:pt-[19px]">
-                <span className="text-[#717171] text-[14px]">
-                  Already have an account?
-                </span>
-                <Link to="/login">
-                <span className="text-red-700 font-medium text-[14px]">
-                  Login
-                </span>
-                </Link>
-              </div>
             </form>
           </div>
         </div>

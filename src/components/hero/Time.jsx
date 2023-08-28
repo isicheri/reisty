@@ -16,7 +16,7 @@ const Time = () => {
 <LocalizationProvider dateAdapter={AdapterDayjs}>
      
         <TimePicker
-        // disablePast={true}
+        disablePast={false}
         variant="standard"
   
           value={value}
@@ -32,7 +32,7 @@ const Time = () => {
           renderInput={(params) => <TextField {...params} variant="standard"      InputProps={{
             style: {
               fontFamily: "Gordita",
-              fontSize: "13px",
+              fontSize: "10px",
               borderRadius: "10px",
               offset: " 1px solid #737373",
               // Replace with your desired font family

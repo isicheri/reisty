@@ -32,13 +32,13 @@ const Cardprops = (props) => {
   const [curSlide, setSlide] = React.useState(0);
   return (
     <>
-      <div className=" min-w-max lg:min-w-fit" style={{ marginRight: "1rem" }}>
-        <div className="hovshade card relative bg-base-100 h-[330px] lg:max-h-min border-2 border-gray-200">
+      <div className="min-w-max lg:min-w-full lg:w-full" style={{ marginRight: "1rem" }}>
+        <div className="hovshade card relative bg-base-100 h-full pb-8 w-[250px] lg:w-full lg:max-h-min border border-gray-200 bg-white">
           <div
             style={{ backgroundImage: "url(" + allBgs[curSlide] + ")" }}
-            className="picPlace relative h-[205px] lg:h-[215px] bg-red-50 lg:w-full w-[250px] "
+            className="picPlace relative h-[205px] lg:h-[180px] bg-gray-50 lg:w-full w-full "
           >
-            <div className="heartFavourite w-full flex justify-end p-3">
+            
               <HiHeart
                 size={30}
                 color="white"
@@ -47,9 +47,8 @@ const Cardprops = (props) => {
                     ? (e.target.style.color = "#f43f5a")
                     : (e.target.style.color = "white");
                 }}
-                className="p-1 rounded-full bg-[#00000020] active:scale-90 duration-100 cursor-pointer"
+                className="p-1.5 rounded-full bg-[#00000020] absolute top-3 right-3 active:scale-90 duration-100 cursor-pointer"
               />
-            </div>
 
             <div className="arrows flex justify-between w-full px-4 absolute ">
               <div
@@ -101,11 +100,11 @@ const Cardprops = (props) => {
             </div>
           </div>
           <Link to="/restaurantProfile">
-          <div className="card-body px-4 pt-8 lg:pt-2">
-            <h2 className="card-title text-[20px] text-[#2B2B2B] font-semibold">
+          <div className="card-body px-4 pt-2">
+            <h2 className="card-title text-[#2B2B2B] font-semibold text-md">
               {props.name}
             </h2>
-            <p className="pb-2 font-light">{props.location}</p>
+            <p className="pb-2 text-sm font-light">{props.location}</p>
             <RatingStar />
           </div>
           </Link>
