@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import AboutUs from "./pages/home/Home";
 import Home from "./pages/home/Home";
@@ -17,9 +17,15 @@ import { ToastContainer, toast } from 'react-toastify';
 // import FAQ from "./pages/support/FAQ";
 // import Support from "./pages/support/Support";
 
+
+
+export const DialogContext = React.createContext(null)
 const App = () => {
+const [showDialog,setShowDialog] = useState(false)
+
   return (
-    <div>
+    <DialogContext.Provider value={{setShowDialog,showDialog}}>
+       <div>
       <BrowserRouter>
       <ToastContainer />
         <Routes>
@@ -39,6 +45,7 @@ const App = () => {
         </Routes>
       </BrowserRouter>
     </div>
+    </DialogContext.Provider>
   );
 };
 
