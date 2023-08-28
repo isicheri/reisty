@@ -60,47 +60,67 @@ const data = [
           <Navbar />
         </div>
 
-        <div className="w-full mt-6 px-[6rem] ">
+        <div className="w-full mt-6 px-[6rem] lg-max:px-0">
 
-          <div className=" flex gap-1 items-center">
+          <div className=" flex gap-1 items-center lg-max:w-full lg-max:flex lg-max:items-center justify-center">
             <div className="">
-              <img src={RectangularGreen} alt="" />
+              <img src={RectangularGreen} alt="" className="lg-max:h-60 lg-max:w-full lg-max:hidden" />
             </div>
             <div className="">
-              <img src={DoubleImg} alt="" />
+              <img src={DoubleImg} alt="" className="lg-max:h-60 lg-max:w-full lg-max:hidden"/>
             </div>
-          </div>
+
+
+            {/* second image holder */}
+            <div className="hidden lg-max:flex lg-max:w-full lg-max:h-60 lg-max:relative lg-max:m-0">
+              <img src={RectangularGreen} alt="" className="lg-max:h-60 lg-max:w-full"/>
+              <div className="lg-max:w-full lg-max:h-20 lg-max:absolute lg-max:bottom-0 lg-max:flex lg-max:items-center p-3 lg-max:justify-end">
+                {/* // button */}
+                <button className="h-[50px] w-[50px] p-[7px] rounded-full border border-[#BC172F] font-normal flex items-center gap-2 m-2 text-[#BC172F] justify-center text-[14px] bg-white">
+                        <AiOutlineStar className="text-[30px]" />
+                      </button>
+                      <button className="h-[50px] w-[50px] p-[7px] rounded-full border border-[#BC172F] font-normal flex items-center gap-2 m-2 text-[#BC172F] justify-center text-[14px] bg-white">
+                      <AiOutlineHeart className="text-[30px]" />
+                      </button>
+                      <button className="h-[50px] w-[50px] p-[7px] rounded-full border border-[#BC172F] font-normal flex items-center gap-2 m-2 text-[#BC172F] justify-center text-[30px] bg-white">
+                      <AiOutlineShareAlt className="text-[30px]" />
+                      </button>
+              </div>
+            </div>0
+
+          </div> 
 
 
 
           <div className="flex items-center mt-4 gap-5">
 
 
-            <div className=" flex gap-10 mb-12">
+            <div className=" flex gap-10 mb-12 lg-max:flex lg-max:h-auto lg-max:flex-col lg-max:items-center lg-max:justify-center lg-max:p-3 lg-max:w-full">
 
 
 
-              <div className="w-[67%]">
+              <div className="w-[67%] lg-max:w-full">
 
                 <div
                   style={{
                     marginBottom: "2rem",
                   }}
                 >
-                  <div className=" flex items-center">
-                    <div className=" flex-1 gap-[12px]">
-                      <h1 className=" font-medium text-[35px] leading-9 text-[#2B2B2B]">
+                  <div className=" flex items-center lg-max:h-28 lg-max:flex lg-max:items-center lg-max:justify-center lg-max:w-full">
+
+                    <div className=" flex-1 gap-[12px] lg-max:w-full lg-max:p-2">
+                      <h1 className=" font-medium text-[15px] leading-9 text-[#2B2B2B] sm:text-[35px]">
                         Orchid Bistro
                       </h1>
-                      <p className="text-[17px] font-normal text-[#2B2B2B]">
+                      <p className="text-[14px] font-normal text-[#2B2B2B] sm:text-[17px]">
                         Akoka,Lagos.American
                       </p>
-                      <h1 className="text-[13px] font-semibold text-[#2B2B2B]">
+                      <h1 className="text-[13px] font-semibold text-[#2B2B2B] sm:text-[13px]">
                         ₦₦
                       </h1>
                     </div>
 
-                    <div className="flex items-center gap-[13px] h-[50px]">
+                    <div className="flex items-center gap-[13px] h-[50px] lg-max:hidden">
                       <button className="restaurant-profile-btns p-[7px] rounded-[6px] border border-[#BC172F] text-[14px] text-[#BC172F] font-normal flex items-center gap-2">
                         <AiOutlineStar className="text-[18px]" /> Save
                       </button>
@@ -111,7 +131,11 @@ const data = [
                         <AiOutlineShareAlt className="text-[20px]" /> Share
                       </button>
                     </div>
+
+
                   </div>
+
+
                 </div>
 
 
@@ -168,7 +192,8 @@ const data = [
               </div>
 
 
-              <div className="w-[33%]">
+              <div className="w-[33%] lg-max:w-full lg-max:h-auto"
+              >
                 <div
                   className="py-[20px] px-[30px]"
                   style={{ boxShadow: "0px 4px 15px 0px rgba(0, 0, 0, 0.25)" }}>
@@ -201,8 +226,8 @@ const data = [
                     Search
                 </div>
                 </div>
-                <div className="mt-[41px] border">
-                <img src={map} alt="" />
+                <div className="mt-[41px] border lg-max:m-3">
+                <img src={map} alt="" className="lg-max:w-full"/>
               </div>
 
               <div className="flex py-[37px] px-[30px] justify-center border">
@@ -220,6 +245,11 @@ const data = [
                   <div>VReservation Hours</div>
                 </div>
               </div>
+
+              <div className="hidden lg-max:flex lg-max:justify-center lg-max:items-center bg-red-700 h-[60px] lg-max:w-full lg-max:mt-7 lg-max:rounded-lg">
+             <p>Book Now</p>
+              </div>
+
               </div>
 
 

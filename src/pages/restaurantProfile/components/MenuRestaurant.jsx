@@ -12,13 +12,13 @@ function MenuRestaurant() {
           <div className='w-2/7 flex justify-start items-center h-72 rounded-xl'>
 
 
-                 <div className='bg-gray-300 flex justify-center items-center h-48 m-3 rounded-xl w-40 relative'>
+                 <div className='bg-gray-300 flex justify-center items-center h-48 m-3 rounded-xl w-40 relative lg-max:text-[12px] lg-max:text-center'>
                  <p>BREAKFAST MENU</p>
                  </div>
-                 <div className='bg-gray-300 h-48 m-3 rounded-xl w-40 relative flex justify-center items-center'>
+                 <div className='bg-gray-300 h-48 m-3 rounded-xl w-40 relative flex justify-center items-center lg-max:text-[12px] lg-max:text-center'>
                     <p>LUNCH MENU</p>
                  </div>
-                 <div className='bg-gray-300 h-48 m-3 rounded-xl w-40 relative flex justify-center items-center'>
+                 <div className='bg-gray-300 h-48 m-3 rounded-xl w-40 relative flex justify-center items-center lg-max:text-[12px] lg-max:text-center'>
                     <p>DINNER MENU</p>
                  </div>
 
